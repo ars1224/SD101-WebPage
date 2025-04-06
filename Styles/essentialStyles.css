@@ -1,44 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #ffffff;
 }
 
 /* Nav Bar */
 
-nav{
+nav {
     background-color: #ffffff;
     height: 10vh;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
-.navBar{
+.navBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 3vh;
 }
 
-.headNav{
+.headNav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 30%;
+    list-style: none;
 }
 
-.headNav li{    
+.headNav li {
     list-style: none;
     padding-top: 6px;
-    padding-bottom: 0px;
     text-align: center;
     font-size: 0.875rem;
     font-style: normal;
@@ -49,11 +54,11 @@ nav{
     cursor: pointer;
 }
 
-.brandName{
+.brandName {
     cursor: pointer;
 }
 
-.navBar .brandName .brand{
+.navBar .brandName .brand {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -80,34 +85,244 @@ nav{
     cursor: pointer;
 }
 
-.headNav .btn:hover{
+.headNav .btn:hover {
     color: #ffffff;
     border: 2px solid #32aa27;
     background-color: #32aa27;
 }
 
-.headNav li:hover{
+.headNav li:hover {
     color: #32aa27;
     text-decoration: underline;
     text-underline-offset: 10px;
     transition: text-underline-offset 0.2s ease;
 }
 
-/* cover page */
+/* Cover Page */
+
 .coverPhoto img {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
     background-size: cover;
-height: 100%;
-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
 }
 
 .coverPhoto::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+/* Title */
+
+.title {
+    position: absolute;
+    top: 40vh;
+    z-index: 1;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-left: 30vh;
+}
+
+.title h6 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.title .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 30px;
+    color: #ffffff;
+    border: 2px solid #32aa27;
+    background-color: #32aa27;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Description Section */
+
+.description {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.815);
+    background-color: #ffffff;
+    height: 70vh;
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .text{
+    width: 28%;
+    margin-right: 15vh;
+    margin-top: 5vh;
+}
+
+.description .text p{
+    margin-bottom: 10px;
+}
+
+.description .image {
+    width:400px;
+    height: 460px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
+    
+}
+
+.description .image img{
+    width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-    z-index: 0;
+    object-fit: cover;     
+    object-position:left; 
+}
+
+.description .text, .description .image{
+    margin-top: 10vh;
+}
+
+.description .text .titleDescrip{
+    font-size: 14px;
+    color: #32aa27;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.description .text .headDescrip{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+.description .text .descrip{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #595959;
+}
+.description .text .getinTouchlink{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: none;
+    text-align: inherit;
+    transition: none;
+    background: none;
+    height: auto;
+    text-transform: none;
+    text-decoration: underline;
+    color: #595959;
+}
+/* Responsive */
+
+
+@media (max-width: 1024px) {
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .headNav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .title {
+        margin-left: 5vw;
+        max-width: 90%;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        padding: 2vh 4vw;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title h6 {
+        font-size: 1rem;
+    }
+
+    .headNav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headNav .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .title h6 {
+        font-size: 0.9rem;
+    }
+
+    .title .btn {
+        font-size: 0.875rem;
+        padding: 0 20px;
+    }
 }
