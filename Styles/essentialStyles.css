@@ -167,9 +167,11 @@ nav {
 
 .description {
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.815);
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
     background-color: #ffffff;
-    height: 70vh;
+    height: 65vh;
     position: absolute;
     top: 90vh;
     width: 100%;
@@ -184,7 +186,6 @@ nav {
 .description .text{
     width: 28%;
     margin-right: 15vh;
-    margin-top: 5vh;
 }
 
 .description .text p{
@@ -196,7 +197,7 @@ nav {
     height: 460px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
     
 }
 
@@ -205,10 +206,6 @@ nav {
     height: 100%;
     object-fit: cover;     
     object-position:left; 
-}
-
-.description .text, .description .image{
-    margin-top: 10vh;
 }
 
 .description .text .titleDescrip{
@@ -259,6 +256,23 @@ nav {
     text-decoration: underline;
     color: #595959;
 }
+
+/* Offers */
+
+.offers{
+    background-color: #eef1ef;
+    height: 65vh;
+    position: absolute;
+    top: 155vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
 /* Responsive */
 
 
