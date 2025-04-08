@@ -131,20 +131,26 @@ nav {
     position: absolute;
     top: 40vh;
     z-index: 1;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.25;
+   /* font-size: 36px;*/
+ /*   font-style: normal;*/
+  /*  font-weight: 700;*/
+  /*  line-height: 1.25;*/
     color: #ffffff;
     margin-left: 30vh;
 }
 
+.title h1{
+     font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+   line-height: 1.25;
+}
 .title h6 {
     font-weight: 400;
     font-size: 20px;
 }
 
-.title .btn {
+.title .btn1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,13 +274,303 @@ nav {
     z-index: 1;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+
+}
+
+.offers .head{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: start;
+    margin-left: 45vh;
+}
+
+.offers .head .empower{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #32aa27;
+}
+
+.offers .head .personalized{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+    max-width: 640px;
+}
+
+.offers .choices{
+    display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+
+}
+.offers .choices .choiceOne, 
+.offers .choices .choiceTwo,
+.offers .choices .choiceThree{
+    margin: 20px;
+}
+.offers .choices .choiceOne .choiceOneImg{
+    width: 321.33px;
+    height: 214.19px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
+
+}
+
+.offers .choices .choiceOne .choiceOneImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position:left; 
+}
+
+.offers .choices .choiceOne .choiceOneTxt{
+    width: 321.33px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .yogaClass p{
+    font-size: 20px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .tailored p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 400;
+    color: #595959;
+    margin-bottom: 10px;
+}
+
+.offers .choices .choiceTwo .choiceTwoImg{
+    width: 321.33px;
+    height: 214.19px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
+
+}
+
+.offers .choices .choiceTwo .choiceTwoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position:left; 
+}
+
+.offers .choices .choiceTwo .choiceTwoTxt{
+    width: 321.33px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.offers .choices .choiceTwo .choiceTwoTxt .Dynamic p{
+    font-size: 20px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offers .choices .choiceTwo .choiceTwoTxt .empower p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 400;
+    color: #595959;
+    margin-bottom: 10px;
+}
+
+.offers .choices .choiceThree .choiceThreeImg{
+    width: 321.33px;
+    height: 214.19px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
+
+}
+
+.offers .choices .choiceThree .choiceThreeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position:left; 
+}
+
+.offers .choices .choiceThreeTxt{
+    width: 321.33px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+.offers .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 20px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offers .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 400;
+    color: #595959;
+    margin-bottom: 10px;
+}
+
+/* Get in touch */
+
+.getIntouch{
+    background-color: #ffffff;
+    height: 90vh;
+    position: absolute;
+    top: 220vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-/* Responsive */
+.newsLetter{
+    background-color:#595959;
+    height: 30vh;
+    position: absolute;
+    top: 310vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
 
+footer{
+    background-color:#292c29;
+    height: 50vh;
+    position: absolute;
+    top: 340vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+
+.form{
+    padding: 20px;
+    margin: 30px;
+}
+
+.form .form-floating .form-control{
+    width: 50vh;
+    margin-top: 40px;
+    border-color: #292c29;
+}
+
+.form .form-floating label{
+    margin-top: -4px;
+    font-size: 14px;
+    font-style: normal;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+}
+
+.form .iAllow label{
+    width: 50vh;
+    margin-top: 30px;
+    border-color: #292c29;
+}
+
+.form .submitBtn .btn{
+    margin-top: 30px;
+    width: 50vh;
+    background-color: #32aa27;
+
+}
+
+.map .contact-section {
+    width : 650px;
+    max-height: 80vh;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+ .map iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+ .map h2 {
+    margin-top: 0;
+  }
+.map  .info-group {
+    margin-bottom: 20px;
+  }
+  .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+ .map .hours {
+    margin-top: 10px;
+  }
+ .map .hours div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+/* Responsive */
 
 @media (max-width: 1024px) {
     .navBar {
