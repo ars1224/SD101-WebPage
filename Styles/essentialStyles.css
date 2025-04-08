@@ -482,24 +482,27 @@ nav {
     align-items: center;
 }
 
-.newsLetter{
-    background-color:#595959;
-    height: 30vh;
-    position: absolute;
-    top: 310vh;
-    width: 100%;
-    z-index: 1;
-    padding: 20px;
+.getIntouch .form .getIntouchHead p.getHead{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #32aa27;
+    
 }
 
-footer{
-    background-color:#292c29;
-    height: 50vh;
-    position: absolute;
-    top: 340vh;
-    width: 100%;
-    z-index: 1;
-    padding: 20px;
+.getIntouch .form .getIntouchHead p.reachHead{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+    width: 50vh;
 }
 
 .form{
@@ -543,32 +546,58 @@ footer{
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
- .map iframe {
+  
+.map iframe {
     width: 100%;
     height: 250px;
     border: 0;
     border-radius: 8px;
     margin-bottom: 20px;
-  }
- .map h2 {
+}
+ 
+.map h2 {
     margin-top: 0;
-  }
+}
+
 .map  .info-group {
     margin-bottom: 20px;
   }
-  .map .info-group a {
+.map .info-group a {
     color: #007BFF;
     text-decoration: none;
   }
- .map .hours {
+.map .hours {
     margin-top: 10px;
   }
- .map .hours div {
+.map .hours div {
     display: flex;
     justify-content: space-between;
     padding: 4px 0;
     border-bottom: 1px solid #eee;
   }
+
+  /* newsletter */
+  .newsLetter{
+    background-color:#595959;
+    height: 30vh;
+    position: absolute;
+    top: 310vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+
+/* footer */
+
+footer{
+    background-color:#292c29;
+    height: 50vh;
+    position: absolute;
+    top: 340vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
 
 /* Responsive */
 
