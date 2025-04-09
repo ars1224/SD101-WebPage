@@ -83,6 +83,7 @@ nav {
     border-radius: 2px;
     box-sizing: border-box;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 .headNav .btn:hover {
@@ -167,6 +168,7 @@ nav {
     box-sizing: border-box;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 30px;
 }
 
 /* Description Section */
@@ -275,6 +277,8 @@ nav {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -283,8 +287,7 @@ nav {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 10px;
-    align-items: start;
-    margin-left: 45vh;
+    width: 47%;
 }
 
 .offers .head .empower{
@@ -505,18 +508,18 @@ nav {
     width: 50vh;
 }
 
-.form{
+.getIntouch .form{
     padding: 20px;
     margin: 30px;
 }
 
-.form .form-floating .form-control{
+.getIntouch .form .form-floating .form-control{
     width: 50vh;
     margin-top: 40px;
     border-color: #292c29;
 }
 
-.form .form-floating label{
+.getIntouch .form .form-floating label{
     margin-top: -4px;
     font-size: 14px;
     font-style: normal;
@@ -524,20 +527,21 @@ nav {
     letter-spacing: 0px;
 }
 
-.form .iAllow label{
+.getIntouch .form .iAllow label{
     width: 50vh;
-    margin-top: 30px;
+    margin-top: 10px;
     border-color: #292c29;
 }
 
-.form .submitBtn .btn{
+.getIntouch .form .submitBtn .btn{
     margin-top: 30px;
     width: 50vh;
     background-color: #32aa27;
-
+    border-radius: 30px;
+    height: 4vh;
 }
 
-.map .contact-section {
+.getIntouch .map .contact-section {
     width : 650px;
     max-height: 80vh;
     margin: auto;
@@ -545,9 +549,9 @@ nav {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
+}
   
-.map iframe {
+.getIntouch .map iframe {
     width: 100%;
     height: 250px;
     border: 0;
@@ -555,37 +559,96 @@ nav {
     margin-bottom: 20px;
 }
  
-.map h2 {
+.getIntouch .map h2 {
     margin-top: 0;
 }
 
-.map  .info-group {
+.getIntouch .map  .info-group {
     margin-bottom: 20px;
-  }
-.map .info-group a {
+}
+
+.getIntouch .map .info-group a {
     color: #007BFF;
     text-decoration: none;
-  }
-.map .hours {
+}
+
+
+.getIntouch .map .hours {
     margin-top: 10px;
-  }
-.map .hours div {
+}
+
+.getIntouch.map .hours div {
     display: flex;
     justify-content: space-between;
     padding: 4px 0;
     border-bottom: 1px solid #eee;
-  }
+}
 
-  /* newsletter */
-  .newsLetter{
-    background-color:#595959;
+/* newsletter */
+
+.newsLetter{
+    background-color: #eef1ef;
     height: 30vh;
     position: absolute;
     top: 310vh;
     width: 100%;
     z-index: 1;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.newsLetter .newsLetterForm .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    margin-right: 20px;
+    width: 50vh;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    border-radius: 30px;
+    border-color: #292c29;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    margin-left: 20px;
+}
+
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 20vh;
+    height: 4vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 27px;
+    font-style: oblique;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: #141313;
+    text-transform: uppercase;
+}
+
+
+
+
 
 /* footer */
 

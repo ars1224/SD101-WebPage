@@ -131,10 +131,13 @@
             <div class="iAllow">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault" style="display: flex; flex-direction: row;">I allow this website to store my submission so they can respond to my inquiry.</label>
+                    <label class="form-check-label" for="checkDefault" style="display: flex; flex-direction: row;">I allow this website to store my submission so they can respond to my inquiry *.</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault" style="display: flex; flex-direction: row;">I agree to receive promotional, promotional or newsletter emails.</label>
                   </div>
             </div>
-
             <div class="submitBtn">
                 <input class="btn btn-success" type="submit" value="Submit">
             </div>
@@ -181,8 +184,31 @@
 
     </div>
 
-    <div class="newsLetter"></div>
+    <div class="newsLetter">
+        <div class="newsLetterForm">
+            <div class="newsLetterHead"> 
+                <span>Subscribe to our newsletter for updates and offfers.</span>
+            </div>   
 
+            <div class="form">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput"  style="display: flex; flex-direction: row;">Email address <p>&nbsp;&nbsp;*</p> </label>
+                </div>
+                
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" placeholder="John Smith">
+                    <label for="floatingName" style="display: flex; flex-direction: row;">Name<p>&nbsp;*</p></label>
+                </div>
+                
+                <div class="submitBtn">
+                    <input class="btn btn-success" type="submit" value="Submit">
+                </div>
+                
+            </div> 
+            
+        </div>
+    </div>
     <footer></footer>
 
     <script src="../Script/script.js"></script>
