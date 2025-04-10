@@ -41,7 +41,7 @@ nav {
     list-style: none;
 }
 
-.headNav li {
+.headNav li a {
     list-style: none;
     padding-top: 6px;
     text-align: center;
@@ -698,6 +698,7 @@ footer .foot .footHead .nav .FootNav{
 
 footer .foot .footHead .nav .FootNav li{
     margin-right: 30px;
+    font-size: 20px;
 }
 
 footer .under{
@@ -707,20 +708,26 @@ footer .under{
 }
 
 footer .under .owner span,
-footer .under .socMed i{
+footer .foot .contact .socMed i{
     color:#acacac;
-    margin-top: 20px;
 }
 
-footer .under .socMed i{
-    margin: 30px;
+footer .foot .contact p{
+    font-size: 18px;
 }
 
-footer .under .socMed{
+footer .foot .contact .socMed{
+    font-size: 27px;
+}
+footer .foot .contact .socMed{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
+    width: 150px;
+
 }
+
 
 
 
