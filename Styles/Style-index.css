@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: #ffffff;
+    line-height: 1.6;
 }
 
 /* Nav Bar */
@@ -32,6 +33,12 @@ nav {
     padding: 3vh;
 }
 
+.navBar .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
 .headNav {
     display: flex;
     flex-direction: row;
@@ -39,6 +46,7 @@ nav {
     justify-content: space-between;
     width: 30%;
     list-style: none;
+    
 }
 
 .headNav li a {
@@ -52,22 +60,24 @@ nav {
     letter-spacing: 1px;
     color: #595959;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.brandName {
+.brandName  {
     cursor: pointer;
 }
 
-.navBar .brandName .brand {
+.navBar .brandName .brand a{
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+   color: #020402;
 }
 
-.headNav .btn {
+.headNav li .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,15 +94,21 @@ nav {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 30px;
+    text-decoration: none;
 }
 
-.headNav .btn:hover {
+.headNav li .btn:hover {
     color: #ffffff;
     border: 2px solid #32aa27;
     background-color: #32aa27;
+    text-decoration: none;
 }
 
-.headNav li:hover {
+.headNav li a:hover {
+    color: #32aa27;
+}
+
+.headNav .li:hover{
     color: #32aa27;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -469,6 +485,40 @@ nav {
     margin-bottom: 10px;
 }
 
+.offers .choices .choiceOne:hover .choiceOneTxt,
+.offers .choices .choiceTwo:hover .choiceTwoTxt,
+.offers .choices .choiceThree:hover .choiceThreeTxt {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.6),
+                0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.offers .choices .choiceOne:hover .choiceOneTxt .yogaClass,
+.offers .choices .choiceTwo:hover .choiceTwoTxt .Dynamic,
+.offers .choices .choiceThree:hover .choiceThreeTxt .high{
+    color: #32aa27;
+} 
+
+.offers .choices .choiceOne:hover .choiceOneImg,
+.offers .choices .choiceTwo:hover .choiceTwoImg,
+.offers .choices .choiceThree:hover .choiceThreeImg {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.6),
+                0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.offers .choices .choiceOne,
+.offers .choices .choiceTwo,
+.offers .choices .choiceThree {
+    margin: 20px;
+    cursor: pointer;
+}
+
+
 /* Get in touch */
 
 .getIntouch{
@@ -528,7 +578,12 @@ nav {
     letter-spacing: 0px;
 }
 
-.getIntouch .form .iAllow label{
+.getIntouch .form .form-floating label .required,
+.getIntouch .form .iAllow label .required{
+    color: rgb(184, 40, 40);
+    margin-left: 4px;
+}
+.getIntouch .form .iAllow{
     width: 50vh;
     margin-top: 10px;
     border-color: #292c29;
@@ -629,6 +684,11 @@ nav {
     letter-spacing: 0px;
 }
 
+.newsLetter .newsLetterForm .form .form-floating label .required{
+    color: rgb(184, 40, 40);
+    margin-left: 4px;
+}
+
 .newsLetter .newsLetterForm .form .submitBtn .btn{
     width: 20vh;
     height: 4vh;
@@ -684,7 +744,7 @@ footer .foot .footHead{
 }
 
 footer .foot .footHead .FootbrandName .brand{
-    font-size: 42px;
+    font-size: 26px;
     font-weight: 800;
     inline-size: 1.5;
     letter-spacing: 0px;
@@ -696,11 +756,16 @@ footer .foot .footHead .nav .FootNav{
     list-style: none;
 }
 
-footer .foot .footHead .nav .FootNav li{
+footer .foot .footHead .nav .FootNav li a {
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 14px;
+    color:#acacac;
 }
-
+footer .foot .footHead .nav .FootNav li:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transition: text-underline-offset 0.2s ease;
+}
 footer .under{
     display: flex;
     flex-direction: column;
@@ -708,16 +773,22 @@ footer .under{
 }
 
 footer .under .owner span,
-footer .foot .contact .socMed i{
+footer .foot .contact .socMed i,
+footer .foot .contact .mail a{
     color:#acacac;
+    text-decoration: none;
+}
+
+footer .under .owner span{
+    font-size: 14px;
 }
 
 footer .foot .contact p{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 footer .foot .contact .socMed{
-    font-size: 27px;
+    font-size: 18px;
 }
 footer .foot .contact .socMed{
     display: flex;
@@ -729,72 +800,36 @@ footer .foot .contact .socMed{
 }
 
 
-
-
-
-/* Responsive */
-
-@media (max-width: 1024px) {
-    .navBar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .headNav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 10px;
-    }
-
-    .title {
-        margin-left: 5vw;
-        max-width: 90%;
-    }
-
-    .title h1 {
-        font-size: 2rem;
-    }
-
-    .description {
-        width: 90%;
-    }
-}
-
 @media (max-width: 768px) {
-    .navBar {
-        padding: 2vh 4vw;
-    }
-
-    .title h1 {
-        font-size: 1.8rem;
-    }
-
-    .title h6 {
-        font-size: 1rem;
-    }
-
     .headNav {
-        flex-direction: column;
-        align-items: flex-start;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 999;
     }
-
-    .headNav .btn {
-        width: 100%;
+  
+    .headNav.show {
+      display: flex;
     }
-}
-
-@media (max-width: 480px) {
-    .title h1 {
-        font-size: 1.5rem;
+  
+    .navBar .hamburger {
+      display: block;
+      color: red;
+      z-index: 99;
     }
-
-    .title h6 {
-        font-size: 0.9rem;
+  
+    .navBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    .title .btn {
-        font-size: 0.875rem;
-        padding: 0 20px;
+  
+    .headNav li, .headNav button {
+      margin: 10px;
     }
-}
+  }
