@@ -46,7 +46,6 @@ nav {
     justify-content: space-between;
     width: 30%;
     list-style: none;
-    
 }
 
 .headNav li a {
@@ -148,10 +147,6 @@ nav {
     position: absolute;
     top: 40vh;
     z-index: 1;
-   /* font-size: 36px;*/
- /*   font-style: normal;*/
-  /*  font-weight: 700;*/
-  /*  line-height: 1.25;*/
     color: #ffffff;
     margin-left: 30vh;
 }
@@ -221,8 +216,7 @@ nav {
     height: 460px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
-    
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815); 
 }
 
 .description .image img{
@@ -454,7 +448,7 @@ nav {
     object-position:left; 
 }
 
-.offers .choices .choiceThreeTxt{
+.offers .choices .choiceThree .choiceThreeTxt{
     width: 321.33px;
     height: 150px;
     background-color: #ffffff;
@@ -718,7 +712,7 @@ nav {
 
 footer{
     background-color:#292c29;
-    height: 50vh;
+    height: 50%;
     position: absolute;
     top: 340vh;
     width: 100%;
@@ -796,9 +790,349 @@ footer .foot .contact .socMed{
     justify-content: space-around;
     align-items: start;
     width: 150px;
+}
+@media (max-width: 1706.67px){
+
+    .headNav li .btn {
+        height: 35px;
+        font-size: .9rem;
+    }
+
+    .title h1{
+        font-size: 50px;
+   }
+   .title h6 {
+       font-size: 15px;
+   }
+   
+   .title .btn1 {
+    height: 30px;
+    font-size: .9rem;
+   }
+
+   .description {
+    padding: 10px;
+}
+
+.description .image {
+    width:350px;
+    height: 410px;
+}
+
+.description .text .titleDescrip{
+    font-size: 14px;
+}
+
+.description .text .headDescrip{
+    font-size: 1.8rem;
+}
+
+.description .text .descrip{
+    font-size: 1rem;
+}
+
+.description .text .getinTouchlink{
+    font-size: 1.1rem;
+}
+
+.offers .head{
+    width: 57%;
+}
+
+.offers .head .empower{
+    font-size: 12px;
+}
+
+.offers .head .personalized{
+    font-size: 27px;
+}
+
+.offers .choices .choiceOne .choiceOneImg,
+.offers .choices .choiceTwo .choiceTwoImg,
+.offers .choices .choiceThree .choiceThreeImg{
+    width: 291.33px;
+    height: 184.19px;
+}
+.offers .choices .choiceOne .choiceOneTxt,
+.offers .choices .choiceTwo .choiceTwoTxt,
+.offers .choices .choiceThree .choiceThreeTxt{
+    width: 291.33px;
+    height: 150px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .yogaClass p,
+.offers .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+.offers .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 18px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .tailored p,
+.offers .choices .choiceTwo .choiceTwoTxt .empower p,
+.offers .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 14px;
+}
+
+.getIntouch{
+    height: 93vh;
+}
+
+.getIntouch .form .getIntouchHead p.getHead{
+    font-size: 14px;
+}
+
+.getIntouch .form .getIntouchHead p.reachHead{
+    font-size: 36px;
+}
+
+.getIntouch .form .form-floating .form-control{
+    font-size: 13px;
+}
+
+.getIntouch .form .form-floating label{
+    margin-top: -5px;
+    font-size: 13px;
+}
+
+.getIntouch .form .submitBtn .btn{
+    margin-top: 25px;
+}
+
+.getIntouch .map .contact-section {
+    width : 550px;
+    max-height: 90vh;
+}
+.getIntouch .map iframe {
+    height: 200px;
+}
+
+.getIntouch .map  .info-group h2{
+    font-size: x-large;
+}
+.getIntouch .map{
+    height: 700px;
+}
+
+.newsLetter{
+    top: 313vh;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 50vh;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    top: -2px;
+    font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating .form-control{
+    font-size: 14px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+   height: 9px;
+}
+
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 25vh;
+    height: 6vh;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 23px;
+}
+
+footer{
+    height: 60%;
+    top: 343vh;
+}
 
 }
 
+@media (max-width: 1600px){
+  
+    .headNav li .btn {
+        height: 36px;
+        font-size: .9rem;
+    }
+
+    .title h1{
+        font-size: 53px;
+   }
+   .title h6 {
+       font-size: 18px;
+   }
+   
+   .title .btn1 {
+    height: 31px;
+    font-size: .9rem;
+   }
+
+   .description {
+    padding: 10px;
+}
+
+.description .image {
+    width:330px;
+    height: 370px;
+}
+
+.description .text .titleDescrip{
+    font-size: 13px;
+}
+
+.description .text .headDescrip{
+    font-size: 1.7rem;
+}
+
+.description .text .descrip{
+    font-size: 1rem;
+}
+
+.description .text .getinTouchlink{
+    font-size: 1rem;
+}
+
+.offers .head{
+    width: 61%;
+}
+
+.offers .head .empower{
+    font-size: 12px;
+}
+
+.offers .head .personalized{
+    font-size: 26px;
+}
+
+.offers .choices .choiceOne .choiceOneImg,
+.offers .choices .choiceTwo .choiceTwoImg,
+.offers .choices .choiceThree .choiceThreeImg{
+    width: 271.33px;
+    height: 164.19px;
+}
+.offers .choices .choiceOne .choiceOneTxt,
+.offers .choices .choiceTwo .choiceTwoTxt,
+.offers .choices .choiceThree .choiceThreeTxt{
+    width: 271.33px;
+    height: 150px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .yogaClass p,
+.offers .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+.offers .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 16px;
+}
+
+.offers .choices .choiceOne .choiceOneTxt .tailored p,
+.offers .choices .choiceTwo .choiceTwoTxt .empower p,
+.offers .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 14px;
+}
+
+.getIntouch .form .getIntouchHead p.getHead{
+    font-size: 13px;
+}
+
+.getIntouch .form .getIntouchHead p.reachHead{
+    font-size: 35px;
+}
+
+.getIntouch .form .form-floating .form-control{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.getIntouch .form .form-floating label{
+    margin-top: -5px;
+    font-size: 12px;
+}
+
+.getIntouch .form .submitBtn .btn{
+    margin-top: 15px;
+}
+
+.getIntouch .map .contact-section {
+    width : 500px;
+    max-height: 85vh;
+}
+
+.newsLetter{
+    top: 313vh;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 50vh;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    top: -2px;
+    font-size: 12px;
+}
+
+
+.newsLetter .newsLetterForm .form .form-floating input{
+   height: 2%; 
+   font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 25vh;
+    height: 7vh;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 23px;
+}
+
+footer{
+    height: 60%;
+    top: 343vh;
+}
+}
+
+@media (max-width: 1422.22px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1163.64px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 853.33px) {
+
+}
+
+@media (max-width: 741.43px) {
+
+}
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 512px) {
+
+}
+
+@media (max-width: 426.67px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 256px) {
+
+}
 
 @media (max-width: 768px) {
     .headNav {
@@ -819,7 +1153,7 @@ footer .foot .contact .socMed{
   
     .navBar .hamburger {
       display: block;
-      color: red;
+      color: #020402;
       z-index: 99;
     }
   
@@ -832,4 +1166,9 @@ footer .foot .contact .socMed{
     .headNav li, .headNav button {
       margin: 10px;
     }
+}
+
+/* Phones (max-width: 576px) */
+
+@media (max-width: 576px) {
   }
