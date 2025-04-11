@@ -796,7 +796,7 @@ footer .foot .contact .socMed{
     align-items: start;
     width: 150px;
 }
-@media (max-width: 1280px){
+@media (min-width: 1200px) and (max-width: 1599px){
 
     nav{
         height: 11.8vh;
@@ -1005,7 +1005,7 @@ footer .foot .contact .socMed{
 
 }
 
-@media (max-width: 1097.14px){
+@media (min-width: 992px) and (max-width: 1199px){
 
     nav {
         height: 14vh;
@@ -1170,7 +1170,7 @@ footer{
 }
 }
 
-@media (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 991px){
     .headNav {
         display: none;
         flex-direction: column;
@@ -1356,6 +1356,9 @@ footer{
     height: 75%;
     top: 373vh;
 }
+}
+@media (min-width: 481px) and (max-width: 767px){
+
 }
 
 @media (max-width: 480px) {
