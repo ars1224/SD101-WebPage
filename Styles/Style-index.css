@@ -803,7 +803,7 @@ footer .foot .contact .socMed{
     }
 
     .headNav li .btn {
-        height: 30px;
+        height: 40px;
         font-size: .87rem;
     }
 
@@ -812,15 +812,15 @@ footer .foot .contact .socMed{
     }
 
     .title h1{
-        font-size: 35px;
+        font-size: 50px;
    }
    .title h6 {
-       font-size: 12px;
+       font-size: 20px;
    }
    
    .title .btn1 {
-    height: 26px;
-    font-size: .6rem;
+    height: 40px;
+    font-size: .8rem;
    }
 
    .description {
@@ -948,37 +948,44 @@ footer .foot .contact .socMed{
 
 .newsLetter{
     top: 313vh;
+    height: 50vh;
 }
 
 .newsLetter .newsLetterForm .form{
   width: 100%;
+  display: flex;
+  flex-direction:column;
 }
 
 .newsLetter .newsLetterForm .form .form-floating{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 .newsLetter .newsLetterForm .form .form-floating input{
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 20px;
     width: 70vh;
     height: 20px
 }
 
 .newsLetter .newsLetterForm .form .form-floating label{
-    margin-left: 10px;
+    margin-left: 50px;
     font-size: 10px;
 }
 
 .newsLetter .newsLetterForm .form .submitBtn .btn{
+    margin-top: 30px;
     width: 28vh;
-    height: 7vh;
+    height: 5vh;
 
 }
 
 footer{
-    height: 77%;
-    top: 343vh;
+    height: 50%;
+    top: 363vh;
 }
 
 footer .foot .footHead .FootbrandName .brand{
@@ -1007,8 +1014,38 @@ footer .foot .contact .socMed{
 
 @media (min-width: 992px) and (max-width: 1199px){
 
+    .headNav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999;
+        justify-content:space-evenly
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  200px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+      }
     nav {
-        height: 14vh;
+        height: 11vh;
     }
   
     .headNav li .btn {
@@ -1021,112 +1058,109 @@ footer .foot .contact .socMed{
     }
 
 .description .image {
-    width:220px;
-    height: 260px;
+    width:330px;
+    height: 410px;
 }
 
 .description .text .titleDescrip{
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .description .text .headDescrip{
-    font-size: .9rem;
+    font-size: 1.02rem;
 }
 
 .description .text .descrip{
-    font-size: .6rem;
+    font-size: .9rem;
 }
 
 .description .text .getinTouchlink{
-    font-size: .6rem;
+    font-size: .9rem;
 }
 
 .offers .head{
-    width: 65%;
+    width: 85%;
 }
 
 .offers .head .empower{
-    font-size: 9px;
+    font-size: 14px;
 }
 
 .offers .head .personalized{
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: -10px;
 }
 
 .offers .choices .choiceOne .choiceOneImg,
 .offers .choices .choiceTwo .choiceTwoImg,
 .offers .choices .choiceThree .choiceThreeImg{
-    width: 201.33px;
-    height: 134.19px;
+    width: 251.33px;
+    height: 184.19px;
 }
 .offers .choices .choiceOne .choiceOneTxt,
 .offers .choices .choiceTwo .choiceTwoTxt,
 .offers .choices .choiceThree .choiceThreeTxt{
-    width: 201.33px;
-    height: 110px;
+    width: 251.33px;
+    height: 150px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .yogaClass p,
 .offers .choices .choiceTwo .choiceTwoTxt .Dynamic p,
 .offers .choices .choiceThree .choiceThreeTxt .high p{
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .tailored p,
 .offers .choices .choiceTwo .choiceTwoTxt .empower p,
 .offers .choices .choiceThree .choiceThreeTxt .get p{
-    font-size: 9px;
+    font-size: 14px;
 }
 
 .getIntouch .form .getIntouchHead p.getHead{
-    font-size: 9px;
+    font-size: 14px;
 }
 
 .getIntouch .form .getIntouchHead p.reachHead{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .getIntouch .form .form-floating .form-control{
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 10px
 }
 
 .getIntouch .form .form-floating label{
     margin-top: -5px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .getIntouch .form .submitBtn .btn{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .getIntouch .map .contact-section {
-    width : 400px;
+    width : 350px;
 }
 
 .getIntouch .map iframe {
-    height: 120px;
+    height: 200px;
 }
 
 .getIntouch .map h2 {
     margin-top: -5px;
-    font-size: medium;
+    font-size: large;
 }
 
 .getIntouch .map .hours,
 .getIntouch .map  .info-group p {
     margin-top: -2px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .newsLetter{
-    top: 313vh;
+    top: 310vh;
     height: 60vh;
    
-}
-.newsLetter .newsLetterForm{
-    margin-top: -10px;
 }
 .newsLetter .newsLetterForm .form{
     display: flex;
@@ -1136,28 +1170,22 @@ footer .foot .contact .socMed{
     padding-bottom: 20px;
 }
 
-.newsLetter .newsLetterForm .form .form-floating{
-margin-right: 0px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
 
 .newsLetter .newsLetterForm .form .form-floating label{
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: -3px;
 }
 
 
 .newsLetter .newsLetterForm .form .form-floating input{
-   font-size: 25px;
- padding-bottom: 25px;
+   font-size: 14px;
+ padding-bottom: 20px;
 }
 
 .newsLetter .newsLetterForm .form .submitBtn .btn{
     margin-top: 10px;
-    width: 40vh;
-    height: 7vh;
+    width: 20vh;
+    height: 5vh;
 }
 
 .newsLetter .newsLetterForm .newsLetterHead span{
@@ -1165,8 +1193,8 @@ align-items: center;
 }
 
 footer{
-    height: 75%;
-    top: 373vh;
+    height: 55%;
+    top: 370vh;
 }
 }
 
@@ -1175,17 +1203,19 @@ footer{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 90px;
         right: 0;
         background-color: white;
         width: 200px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         z-index: 999;
+        justify-content:space-evenly
       }
     
       .headNav.show {
         display: flex;
         width: 100%;
+        height:  200px;
       }
     
       .navBar .hamburger {
@@ -1194,21 +1224,14 @@ footer{
         z-index: 99;
         margin-bottom: 20px;
         margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 34px;
         
       }
-    
-      .navBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    
-      .headNav li, .headNav button {
-        margin: 10px;
-      }
-
-      nav {
-        height: 14vh;
+    nav {
+        height: 11vh;
     }
   
     .headNav li .btn {
@@ -1220,101 +1243,110 @@ footer{
         width: 40%;
     }
 
+.description .image {
+    width:330px;
+    height: 410px;
+}
+
+.description .text .titleDescrip{
+    font-size: 12px;
+}
+
+.description .text .headDescrip{
+    font-size: 1.02rem;
+}
+
+.description .text .descrip{
+    font-size: .9rem;
+}
+
+.description .text .getinTouchlink{
+    font-size: .9rem;
+}
+
 .offers .head{
-    width: 74%;
+    width: 85%;
 }
 
 .offers .head .empower{
-    margin-top: -20px;
-    font-size: 7px;
+    font-size: 14px;
 }
 
 .offers .head .personalized{
-    font-size: 12px;
-    margin-bottom: -12px;
+    font-size: 17px;
+    margin-bottom: -10px;
 }
 
 .offers .choices .choiceOne .choiceOneImg,
 .offers .choices .choiceTwo .choiceTwoImg,
 .offers .choices .choiceThree .choiceThreeImg{
-    width: 171.33px;
-    height: 104.19px;
+    width: 251.33px;
+    height: 184.19px;
 }
 .offers .choices .choiceOne .choiceOneTxt,
 .offers .choices .choiceTwo .choiceTwoTxt,
 .offers .choices .choiceThree .choiceThreeTxt{
-    width: 171.33px;
-    height: 103px;
+    width: 251.33px;
+    height: 150px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .yogaClass p,
 .offers .choices .choiceTwo .choiceTwoTxt .Dynamic p,
 .offers .choices .choiceThree .choiceThreeTxt .high p{
-    font-size: 10px;
+    font-size: 17px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .tailored p,
 .offers .choices .choiceTwo .choiceTwoTxt .empower p,
 .offers .choices .choiceThree .choiceThreeTxt .get p{
-    font-size: 9px;
+    font-size: 14px;
 }
 
 .getIntouch .form .getIntouchHead p.getHead{
-    font-size: 7px;
+    font-size: 14px;
 }
 
 .getIntouch .form .getIntouchHead p.reachHead{
-    font-size: 15px;
-margin-top: -9px;
+    font-size: 30px;
 }
 
 .getIntouch .form .form-floating .form-control{
-    font-size: 10px;
+    font-size: 14px;
+    margin-top: 10px
 }
 
 .getIntouch .form .form-floating label{
     margin-top: -5px;
-    font-size: 9px;
+    font-size: 14px;
 }
 
 .getIntouch .form .submitBtn .btn{
-    margin-top: 15px;
-    font-size: 9px;
+    margin-top: 20px;
 }
 
 .getIntouch .map .contact-section {
-    width : 220px;
-    height: 90vh;
+    width : 350px;
 }
 
-.getIntouch .map {
-    height: 100%;
-}
 .getIntouch .map iframe {
-    height: 120px;
-    width: 100%;
-    padding: 0px;
+    height: 200px;
 }
 
 .getIntouch .map h2 {
     margin-top: -5px;
-    font-size: 10px;
+    font-size: large;
 }
 
 .getIntouch .map .hours,
 .getIntouch .map  .info-group p {
     margin-top: -2px;
-    font-size: 8px;
+    font-size: 14px;
 }
 
 .newsLetter{
-    top: 313vh;
+    top: 310vh;
     height: 60vh;
    
-}
-
-.newsLetter .newsLetterForm .newsLetterHead{
-    font-size: 9px;
 }
 .newsLetter .newsLetterForm .form{
     display: flex;
@@ -1324,28 +1356,22 @@ margin-top: -9px;
     padding-bottom: 20px;
 }
 
-.newsLetter .newsLetterForm .form .form-floating{
-margin-right: 0px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
 
 .newsLetter .newsLetterForm .form .form-floating label{
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: -3px;
 }
 
 
 .newsLetter .newsLetterForm .form .form-floating input{
-   font-size: 25px;
- padding-bottom: 25px;
+   font-size: 14px;
+ padding-bottom: 20px;
 }
 
 .newsLetter .newsLetterForm .form .submitBtn .btn{
     margin-top: 10px;
-    width: 40vh;
-    height: 7vh;
+    width: 20vh;
+    height: 5vh;
 }
 
 .newsLetter .newsLetterForm .newsLetterHead span{
@@ -1353,8 +1379,8 @@ align-items: center;
 }
 
 footer{
-    height: 75%;
-    top: 373vh;
+    height: 55%;
+    top: 370vh;
 }
 }
 @media (min-width: 481px) and (max-width: 767px){
