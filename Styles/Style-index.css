@@ -1953,10 +1953,18 @@ footer .foot .contact .socMed{
     width: 30vh;
     height: 3.5vh;
     font-size: 12px;
+   
 }
 
+.getIntouch .form .submitBtn {
+    display:flex ;
+     justify-content: center;
+    align-items: center;
+}
+
+
 .getIntouch .form .iAllow{
-    width: 35vh;
+    width: 48vh;
     margin-top: 10px;
     border-color: #292c29;
     font-size: 12px;
