@@ -1727,7 +1727,7 @@ footer .foot .contact .socMed{
 }
 
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px){
     .headNav {
         display: none;
         flex-direction: column;
