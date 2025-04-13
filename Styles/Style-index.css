@@ -1996,6 +1996,9 @@ footer .foot .contact .socMed{
     top: 375vh;
     height: 50vh;
     width: 100%;
+    display:flex ;
+    justify-content: center;
+   align-items: center;
    
 }
 .newsLetter .newsLetterForm .form{
@@ -2027,7 +2030,11 @@ footer .foot .contact .socMed{
     height: 3.3vh;
     font-size: 12px;
 }
-
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    display:flex ;
+    justify-content: center;
+   align-items: center;
+}
 .newsLetter .newsLetterForm .newsLetterHead span{
     font-size: 12px;
 }
