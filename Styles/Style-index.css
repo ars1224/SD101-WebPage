@@ -286,7 +286,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .offers .head{
@@ -596,7 +595,7 @@ nav {
 
 .getIntouch .map .contact-section {
     width : 650px;
-    max-height: 80vh;
+    height: 80vh;
     margin: auto;
     background: white;
     padding: 20px;
@@ -927,8 +926,7 @@ footer .foot .contact .socMed{
 }
 
 .getIntouch .map  .info-group {
-    margin-bottom: 14px;
-
+    margin-bottom: 5px;
 }
 
 .getIntouch .map .info-group p {
@@ -936,11 +934,11 @@ footer .foot .contact .socMed{
     margin-top: 10px;
 }
 .getIntouch .map .hours {
-  font-size: medium;
+  font-size: small;
 }
 
 .getIntouch .map{
-    height: 650px;
+    height: 600px;
 }
 
 .newsLetter{
@@ -969,8 +967,11 @@ footer .foot .contact .socMed{
 }
 
 .newsLetter .newsLetterForm .form .form-floating label{
-    margin-left: 50px;
+    margin-left: 120px;
     font-size: 10px;
+    width: 100%;
+    padding-left: 30px;
+
 }
 
 .newsLetter .newsLetterForm .form .submitBtn .btn{
@@ -1054,8 +1055,8 @@ footer .foot .contact .socMed{
     }
 
 .description .image {
-    width:330px;
-    height: 410px;
+    width:310px;
+    height: 360px;
 }
 
 .description .text .titleDescrip{
@@ -1090,14 +1091,14 @@ footer .foot .contact .socMed{
 .offers .choices .choiceOne .choiceOneImg,
 .offers .choices .choiceTwo .choiceTwoImg,
 .offers .choices .choiceThree .choiceThreeImg{
-    width: 271.33px;
-    height: 184.19px;
+    width: 251.33px;
+    height: 164.19px;
 }
 .offers .choices .choiceOne .choiceOneTxt,
 .offers .choices .choiceTwo .choiceTwoTxt,
 .offers .choices .choiceThree .choiceThreeTxt{
-    width: 271.33px;
-    height: 150px;
+    width: 251.33px;
+    height: 130px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .yogaClass p,
@@ -1112,30 +1113,39 @@ footer .foot .contact .socMed{
     font-size: 14px;
 }
 
+.getIntouch{
+
+    height: 120vh;
+    top: 220vh;
+}
+
 .getIntouch .form .getIntouchHead p.getHead{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .getIntouch .form .getIntouchHead p.reachHead{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .getIntouch .form .form-floating .form-control{
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px
 }
 
 .getIntouch .form .form-floating label{
     margin-top: -5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .getIntouch .form .submitBtn .btn{
     margin-top: 20px;
+    height: 30px;
+    font-size: 13px;
 }
 
 .getIntouch .map .contact-section {
     width : 350px;
+    height: 100vh;
 }
 
 .getIntouch .map iframe {
@@ -1154,15 +1164,18 @@ footer .foot .contact .socMed{
 }
 
 .newsLetter{
-    top: 309vh;
+    top: 340vh;
     height: 50vh;
    
 }
-.newsLetter .newsLetterForm .form{
+.newsLetter .newsLetterForm form .form{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 45vh;
 }
 
 
@@ -1170,17 +1183,33 @@ footer .foot .contact .socMed{
     font-size: 14px;
     margin-top: -3px;
 }
+.newsLetter .newsLetterForm .form .form-floating{
+    margin-right: 0px;
+    margin: 5px;
+}
 
+.newsLetter .newsLetterForm .form{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
 
 .newsLetter .newsLetterForm .form .form-floating input{
    font-size: 14px;
  padding-bottom: 20px;
-}
+ width: 90vh;
 
+ 
+
+}
+.newsLetter .newsLetterForm form .form .submitBtn{
+  margin-left: 35vh;
+}
 .newsLetter .newsLetterForm .form .submitBtn .btn{
+    font-size: 14px;
     margin-top: 10px;
     width: 20vh;
-    height: 5vh;
+    height: 6vh;
 }
 
 .newsLetter .newsLetterForm .newsLetterHead span{
@@ -1189,7 +1218,7 @@ footer .foot .contact .socMed{
 
 footer{
     height: 100%;
-    top: 357vh;
+    top: 390vh;
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
