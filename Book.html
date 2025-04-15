@@ -32,68 +32,112 @@
 
     <div class="booking">
         <div class="progress">
-            <div class="progress-step active"><strong>BOOK FOR</strong></div>
-            <div class="progress-step"><strong>YOUR DETAILS</strong></div>
-            <div class="progress-step"><strong>PAYMENT</strong></div>
+            <div class="progress-step active">Are you a member?</div>
+            <div class="progress-step">Your details</div>
+            <div class="progress-step">Payment</div>
         </div>
+
+        <div class="form-section" id="step1">
+            <div class="member">
+                <span>Are you a member?<span class="required">&nbsp;*</span></span>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="member" id="memberYes" value="yes">
+                    <label class="btn btn-outline-primary" for="memberYes">Yes</label>
     
-        <div class="member">
-            <span>Are you a member?<span class="required">&nbsp;*</span></span>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="member" id="memberYes" value="yes">
-                <label class="btn btn-outline-primary" for="memberYes">Yes</label>
-    
-                <input type="radio" class="btn-check" name="member" id="memberNo" value="no">
-                <label class="btn btn-outline-primary" for="memberNo">No</label>
+                    <input type="radio" class="btn-check" name="member" id="memberNo" value="no">
+                    <label class="btn btn-outline-primary" for="memberNo">No</label>
+                </div>
+                <p id="discountMsg" class="info-text">Join Now to get 10% discount on every class you book!</p>
             </div>
-            <p id="discountMsg" class="info-text">As a member, you get 10% discount!</p>
-        </div>
+
+            <div id="classSelection" class="class hidden">
+                <span>Which class do you want to book?<span class="required">&nbsp;*</span></span>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="class" id="yoga" value="Yoga">
+                    <label class="btn btn-outline-primary" for="yoga">Yoga</label>
     
-        <div id="classSelection" class="class hidden">
-            <span>Which class do you want to book?<span class="required">&nbsp;*</span></span>
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="class" id="yoga" value="Yoga">
-                <label class="btn btn-outline-primary" for="yoga">Yoga</label>
+                    <input type="radio" class="btn-check" name="class" id="pilates" value="Pilates">
+                    <label class="btn btn-outline-primary" for="pilates">Pilates</label>
     
-                <input type="radio" class="btn-check" name="class" id="pilates" value="Pilates">
-                <label class="btn btn-outline-primary" for="pilates">Pilates</label>
-    
-                <input type="radio" class="btn-check" name="class" id="hiit" value="HIIT">
-                <label class="btn btn-outline-primary" for="hiit">HIIT</label>
+                    <input type="radio" class="btn-check" name="class" id="hiit" value="HIIT">
+                    <label class="btn btn-outline-primary" for="hiit">HIIT</label>
+                </div>
+                <button id="toStep2">Next</button>
             </div>
         </div>
-    
-        <div id="bookingForm" class="form hidden">
-            <form id="userDetailsForm">
-                
-                <div class="mb-3">
-                    <label class="form-label">First Name<span class="required">&nbsp;*</span></label>
-                    <input type="text" class="form-control" id="firstName" required>
-                </div>
-    
-                <div class="mb-3">
-                    <label class="form-label">Surname<span class="required">&nbsp;*</span></label>
-                    <input type="text" class="form-control" id="surName" required>
-                </div>
-                
-                <div class="mb-3">
-                    <label class="form-label">Email address<span class="required">&nbsp;*</span></label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-    
-                <div class="mb-3">
-                    <label class="form-label">Contact No.<span class="required">&nbsp;*</span></label>
-                    <input type="number" class="form-control" id="contactNo" required>
-                </div>
-    
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+
+        <div class="form-section hidden" id="step2">
+            <div id="bookingForm" class="form hidden">
+                <form id="userDetailsForm">
+                    <div class="mb-3">
+                        <label class="form-label">First Name<span class="required">&nbsp;*</span></label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Surname<span class="required">&nbsp;*</span></label>
+                        <input type="text" class="form-control" id="surName" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Email address<span class="required">&nbsp;*</span></label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Contact No.<span class="required">&nbsp;*</span></label>
+                        <input type="number" class="form-control" id="contactNo" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="toStep3">Submit</button>
+                </form>
+            </div>
         </div>
-    
-        <div id="paymentForm" class="hidden">
-            <h4>Select Payment Method</h4>
-            <button class="btn btn-success">Pay with Card</button>
-            <button class="btn btn-secondary">Pay on Arrival</button>
+
+        <div class="form-section hidden" id="step3">
+            <div id="paymentForm" class="hidden">
+                <h4>Select Payment Method</h4>
+                <div class="btn-group" role="group">
+                    <input type="radio" id="payCardRadio" name="payment" value="card" class="btn-check">
+                    <label class="btn btn-outline-primary" for="payCardRadio">Pay with Card</label>
+                </div>
+                <div class="btn-group" role="group">
+                    <input type="radio" id="payArrivalRadio" name="payment" value="arrival" class="btn-check">
+                    <label class="btn btn-outline-primary" for="payArrivalRadio">Pay on Arrival</label>
+                </div>
+
+                <div class="payOnstore">
+                    <p id="reference-number" style="display: none; font-weight: bold; color: #32aa27; margin-top: 10px;">
+                        Reference #: ZEN-123456
+                    </p>
+                </div>
+                
+                <!-- Card Payment Form -->
+                <form id="cardPaymentForm" class="payment-card hidden">
+                    <div class="mb-3">
+                        <label class="form-label">Name on Card<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="cardName" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Card No.<span class="required">*</span></label>
+                        <input type="number" class="form-control" id="cardNumber" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Exp Date<span class="required">*</span></label>
+                        <input type="month" class="form-control" id="expDate" required>
+                        <small class="text-muted">Format: MM/YY</small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">CVV<span class="required">*</span></label>
+                        <input type="number" class="form-control" id="cvv" maxlength="4" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Payment</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -169,5 +213,6 @@
     </footer>-->
 
     <script src="Script/script.js"></script>
+    <script src="Script/script-booking.js"></script>
 </body>
 </html>

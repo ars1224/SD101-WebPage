@@ -619,7 +619,7 @@ nav {
 }
 
 .getIntouch .map .contact-section {
-    width : 650px;
+    width : 500px;
     height: 80vh;
     margin: auto;
     background: white;
@@ -633,16 +633,15 @@ nav {
     height: 220px;
     border: 0;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
  
 .getIntouch .map h2 {
-    margin-top: -5px;
-    font-size: large;
+    padding: 6px;
 }
 
 .getIntouch .map  .info-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .getIntouch .map .info-group a {
@@ -658,7 +657,7 @@ nav {
 .getIntouch.map .hours div {
     display: flex;
     justify-content: space-between;
-    padding: 4px 0;
+    padding: 4px 2px;
     border-bottom: 1px solid #eee;
 }
 
