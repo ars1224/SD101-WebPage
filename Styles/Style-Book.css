@@ -23,6 +23,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 9999999;
+    border: 2px solid #020402;
 }
 
 .navBar {
@@ -113,8 +114,76 @@ nav {
     transition: text-underline-offset 0.2s ease;
 }
 
-/* footer */
+/* Booking */
 
+.booking{
+    height: 750px;
+    width: 99%;
+    margin: 10px;
+    top: 110px;
+    position: absolute;
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-text {
+    color: #32aa27;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+.booking .progress {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    height: fit-content;
+    background-color: #ffffff;
+  }
+
+  .booking .progress .progress-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+  }
+
+  .booking .progress .progress-step::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .booking .progress .progress-step:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -50%;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    z-index: -1;
+  }
+
+  .booking .progress .progress-step.active::before {
+    background: #ddd;
+  }
+
+  .booking .member span .required{
+    color: rgb(204, 37, 37);
+    margin-left: 4px;
+  }
+
+/* footer */
+/*
 footer{
     background-color:#292c29;
     height: 50%;
@@ -193,4 +262,4 @@ footer .foot .contact .socMed{
     justify-content: space-around;
     align-items: start;
     width: 150px;
-}
+}*/

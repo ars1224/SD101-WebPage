@@ -1,11 +1,3 @@
-// scroll 
-const offerBtn = document.getElementById('offerBtn');
-const offerLocation = document.getElementById('OffersNav');
-
-offerBtn.addEventListener('click', () => {
-  offerLocation.scrollIntoView({ behavior: 'smooth' });
-});
-
 //form contact form submit
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
@@ -65,3 +57,47 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
 
+//Booking
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yesRadio = document.getElementById("memberYes");
+  const noRadio = document.getElementById("memberNo");
+  const discountMsg = document.getElementById("discountMsg");
+  const classSelection = document.getElementById("classSelection");
+  const bookingForm = document.getElementById("bookingForm");
+  const paymentForm = document.getElementById("paymentForm");
+  const classRadios = document.querySelectorAll('input[name="class"]');
+  const form = document.getElementById("userDetailsForm");
+
+  // Hide everything initially
+  discountMsg.style.display = "none";
+  classSelection.classList.add("hidden");
+  bookingForm.classList.add("hidden");
+  paymentForm.classList.add("hidden");
+
+  // Show class selection on member status select
+  yesRadio.addEventListener("change", () => {
+      discountMsg.style.display = "none";
+      classSelection.classList.remove("hidden");
+  });
+
+  noRadio.addEventListener("change", () => {
+      discountMsg.style.display = "block";
+      classSelection.classList.remove("hidden");
+  });
+
+  // Show booking form after class is selected
+  classRadios.forEach((radio) => {
+      radio.addEventListener("change", () => {
+          bookingForm.classList.remove("hidden");
+      });
+  });
+
+  // Show payment form on form submission
+  form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      paymentForm.classList.remove("hidden");
+      document.querySelector(".progress-step:nth-child(2)").classList.add("active");
+      document.querySelector(".progress-step:nth-child(3)").classList.add("active");
+  });
+});

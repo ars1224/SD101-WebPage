@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenFit Studio - Your Holistic Wellness Destination</title>
-    <link rel="stylesheet" href="Styles/Style-index.css">
+    <link rel="stylesheet" href="Styles/Style-Book.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5c09730e7a.js" crossorigin="anonymous"></script> <!-- Fontawesome-->
 </head>
@@ -23,17 +23,83 @@
             
             <ul class="headNav" id="navMenu">
                 <li class="li"><a href="index.html">Home</a></li>
-                <li class="li"><a href="#">Book</a></li>
+                <li class="li"><a href="Book.html">Book</a></li>
                 <li class="li"><a href="about.html">About ZenFIT</a></li>
                 <li><button type="button" class="btn">Join now!</button></li>
             </ul>
         </div>
     </nav>
 
+    <div class="booking">
+        <div class="progress">
+            <div class="progress-step active"><strong>BOOK FOR</strong></div>
+            <div class="progress-step"><strong>YOUR DETAILS</strong></div>
+            <div class="progress-step"><strong>PAYMENT</strong></div>
+        </div>
+    
+        <div class="member">
+            <span>Are you a member?<span class="required">&nbsp;*</span></span>
+            <div class="btn-group" role="group">
+                <input type="radio" class="btn-check" name="member" id="memberYes" value="yes">
+                <label class="btn btn-outline-primary" for="memberYes">Yes</label>
+    
+                <input type="radio" class="btn-check" name="member" id="memberNo" value="no">
+                <label class="btn btn-outline-primary" for="memberNo">No</label>
+            </div>
+            <p id="discountMsg" class="info-text">As a member, you get 10% discount!</p>
+        </div>
+    
+        <div id="classSelection" class="class hidden">
+            <span>Which class do you want to book?<span class="required">&nbsp;*</span></span>
+            <div class="btn-group" role="group">
+                <input type="radio" class="btn-check" name="class" id="yoga" value="Yoga">
+                <label class="btn btn-outline-primary" for="yoga">Yoga</label>
+    
+                <input type="radio" class="btn-check" name="class" id="pilates" value="Pilates">
+                <label class="btn btn-outline-primary" for="pilates">Pilates</label>
+    
+                <input type="radio" class="btn-check" name="class" id="hiit" value="HIIT">
+                <label class="btn btn-outline-primary" for="hiit">HIIT</label>
+            </div>
+        </div>
+    
+        <div id="bookingForm" class="form hidden">
+            <form id="userDetailsForm">
+                
+                <div class="mb-3">
+                    <label class="form-label">First Name<span class="required">&nbsp;*</span></label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label class="form-label">Surname<span class="required">&nbsp;*</span></label>
+                    <input type="text" class="form-control" id="surName" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Email address<span class="required">&nbsp;*</span></label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label class="form-label">Contact No.<span class="required">&nbsp;*</span></label>
+                    <input type="number" class="form-control" id="contactNo" required>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    
+        <div id="paymentForm" class="hidden">
+            <h4>Select Payment Method</h4>
+            <button class="btn btn-success">Pay with Card</button>
+            <button class="btn btn-secondary">Pay on Arrival</button>
+        </div>
+    </div>
 
 
-
-       <!--footer-->
+    <!--footer-->
+       <!--
        <footer>
         <div class="foot">
             <div class="footHead">
@@ -44,27 +110,27 @@
                     <ul class="FootNav">
                         <li>
                             <a href="index.html" style="text-decoration: none;">
-                                Home<span>&nbsp;&nbsp;|</span>
+                                Home<span>&nbsp;|</span>
                             </a>
                         </li>
                         <li>
-                            <a href="index.html" style="text-decoration: none;">
-                                Book<span>&nbsp;&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#OffersNav" style="text-decoration: none;">
-                                Classes<span>&nbsp;&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" style="text-decoration: none;">
-                                Why ZenFIT?<span>&nbsp;&nbsp;|</span>
+                            <a href="book.html" style="text-decoration: none;">
+                                Book<span>&nbsp;|</span>
                             </a>
                         </li>
                         <li>
                             <a href="" style="text-decoration: none;">
-                                Join Now!<span>&nbsp;&nbsp;|</span>
+                                Classes<span>&nbsp;|</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" style="text-decoration: none;">
+                                Why ZenFIT?<span>&nbsp;|</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" style="text-decoration: none;">
+                                Join Now!<span>&nbsp;|</span>
                             </a>
                         </li>
                     </ul>
@@ -100,8 +166,8 @@
             </div>
         </div>
        
-    </footer>
+    </footer>-->
 
-    <script src="Script/index-script.js"></script>
+    <script src="Script/script.js"></script>
 </body>
 </html>

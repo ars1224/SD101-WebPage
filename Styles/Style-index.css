@@ -101,6 +101,7 @@ nav {
     border: 2px solid #32aa27;
     background-color: #32aa27;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .headNav li a:hover {
@@ -111,7 +112,7 @@ nav {
     color: #32aa27;
     text-decoration: underline;
     text-underline-offset: 10px;
-    transition: text-underline-offset 0.2s ease;
+    transition: all text-underline-offset 0.3s ease;
 }
 
 /* Cover Page */
@@ -149,6 +150,9 @@ nav {
     z-index: 1;
     color: #ffffff;
     margin-left: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .title h1{
@@ -180,6 +184,27 @@ nav {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 30px;
+    width: 300px;
+}
+
+.title .btn1:hover {
+ letter-spacing: 3px;
+ text-shadow: #292c29;
+ transition: all 0.3s ease;
+}
+
+.title span{
+    margin-top: 2vh;
+}
+
+.title span a:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.title span a{
+    text-decoration: none;
+    color:#acacac
 }
 
 /* Description Section */
