@@ -216,28 +216,31 @@ nav {
     border-bottom-right-radius: 0%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
     background-color: #ffffff;
-    height: 65vh;
+    height: fit-content;
     position: absolute;
     top: 90vh;
     width: 100%;
     z-index: 1;
-    padding: 20px;
+}
+
+.description .description-Container{
+    padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.description .text{
+.description .description-Container .text{
     width: 28%;
     margin-right: 15vh;
 }
 
-.description .text p{
+.description .description-Container .text p{
     margin-bottom: 10px;
 }
 
-.description .image {
+.description .description-Container .image {
     width:400px;
     height: 460px;
     overflow: hidden;
@@ -245,14 +248,14 @@ nav {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.815); 
 }
 
-.description .image img{
+.description .description-Container .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;     
     object-position:left; 
 }
 
-.description .text .titleDescrip{
+.description .description-Container .text .titleDescrip{
     font-size: 14px;
     color: #32aa27;
     font-style: normal;
@@ -261,7 +264,7 @@ nav {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.description .text .headDescrip{
+.description .description-Container .text .headDescrip{
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
@@ -270,9 +273,8 @@ nav {
     text-transform: none;
     margin-bottom: 10px;
 }
-.description .text .descrip{
+.description .description-Container .text .descrip{
     display: block;
-;
     unicode-bidi: isolate;
     font-size: 1.125rem;
     font-style: normal;
@@ -282,7 +284,7 @@ nav {
     text-transform: none;
     color: #595959;
 }
-.description .text .getinTouchlink{
+.description .description-Container .text .getinTouchlink{
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -302,19 +304,21 @@ nav {
 
 .offers{
     background-color: #eef1ef;
-    height: 65vh;
+    height: fit-content;
     position: absolute;
-    top: 155vh;
+    top: 150vh;
     width: 100%;
     z-index: 1;
-    padding: 20px;
+}
+.offers .offers-Container{
+    padding: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.offers .head{
+.offers .offers-Container .head{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -322,7 +326,7 @@ nav {
     width: 55%;
 }
 
-.offers .head .empower{
+.offers .offers-Container .head .empower{
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -333,7 +337,7 @@ nav {
     color: #32aa27;
 }
 
-.offers .head .personalized{
+.offers .offers-Container .head .personalized{
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -346,7 +350,7 @@ nav {
 
 
 
-.offers .choices{
+.offers .offers-Container .choices{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -354,12 +358,12 @@ nav {
     align-items: center;
 
 }
-.offers .choices .choiceOne, 
-.offers .choices .choiceTwo,
-.offers .choices .choiceThree{
+.offers .offers-Container .choices .choiceOne, 
+.offers .offers-Container .choices .choiceTwo,
+.offers .offers-Container .choices .choiceThree{
     margin: 20px;
 }
-.offers .choices .choiceOne .choiceOneImg{
+.offers .offers-Container .choices .choiceOne .choiceOneImg{
     width: 321.33px;
     height: 214.19px;
     overflow: hidden;
@@ -369,14 +373,14 @@ nav {
 
 }
 
-.offers .choices .choiceOne .choiceOneImg img{
+.offers .offers-Container .choices .choiceOne .choiceOneImg img{
     width: 100%;
     height: 100%;
     object-fit: cover;     
     object-position:left; 
 }
 
-.offers .choices .choiceOne .choiceOneTxt{
+.offers .offers-Container .choices .choiceOne .choiceOneTxt{
     width: 321.33px;
     height: 150px;
     background-color: #ffffff;
@@ -386,7 +390,7 @@ nav {
     padding: 20px;
 }
 
-.offers .choices .choiceOne .choiceOneTxt .yogaClass p{
+.offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p{
     font-size: 20px;
     line-height: 1.25;
     font-style: normal;
@@ -396,7 +400,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceOne .choiceOneTxt .tailored p{
+.offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p{
     font-size: 16px;
     line-height: 1.25;
     font-style: normal;
@@ -407,7 +411,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceTwo .choiceTwoImg{
+.offers .offers-Container .choices .choiceTwo .choiceTwoImg{
     width: 321.33px;
     height: 214.19px;
     overflow: hidden;
@@ -417,14 +421,14 @@ nav {
 
 }
 
-.offers .choices .choiceTwo .choiceTwoImg img{
+.offers .offers-Container .choices .choiceTwo .choiceTwoImg img{
     width: 100%;
     height: 100%;
     object-fit: cover;     
     object-position:left; 
 }
 
-.offers .choices .choiceTwo .choiceTwoTxt{
+.offers .offers-Container .choices .choiceTwo .choiceTwoTxt{
     width: 321.33px;
     height: 150px;
     background-color: #ffffff;
@@ -434,7 +438,7 @@ nav {
     padding: 20px;
 }
 
-.offers .choices .choiceTwo .choiceTwoTxt .Dynamic p{
+.offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p{
     font-size: 20px;
     line-height: 1.25;
     font-style: normal;
@@ -444,7 +448,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceTwo .choiceTwoTxt .empower p{
+.offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p{
     font-size: 16px;
     line-height: 1.25;
     font-style: normal;
@@ -455,7 +459,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceThree .choiceThreeImg{
+.offers .offers-Container .choices .choiceThree .choiceThreeImg{
     width: 321.33px;
     height: 214.19px;
     overflow: hidden;
@@ -465,14 +469,14 @@ nav {
 
 }
 
-.offers .choices .choiceThree .choiceThreeImg img{
+.offers .offers-Container .choices .choiceThree .choiceThreeImg img{
     width: 100%;
     height: 100%;
     object-fit: cover;     
     object-position:left; 
 }
 
-.offers .choices .choiceThree .choiceThreeTxt{
+.offers .offers-Container .choices .choiceThree .choiceThreeTxt{
     width: 321.33px;
     height: 150px;
     background-color: #ffffff;
@@ -482,7 +486,7 @@ nav {
     padding: 20px;
 }
 
-.offers .choices .choiceThree .choiceThreeTxt .high p{
+.offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
     font-size: 20px;
     line-height: 1.25;
     font-style: normal;
@@ -492,7 +496,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceThree .choiceThreeTxt .get p{
+.offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
     font-size: 16px;
     line-height: 1.25;
     font-style: normal;
@@ -503,9 +507,9 @@ nav {
     margin-bottom: 10px;
 }
 
-.offers .choices .choiceOne:hover .choiceOneTxt,
-.offers .choices .choiceTwo:hover .choiceTwoTxt,
-.offers .choices .choiceThree:hover .choiceThreeTxt {
+.offers .offers-Container .choices .choiceOne:hover .choiceOneTxt,
+.offers .offers-Container .choices .choiceTwo:hover .choiceTwoTxt,
+.offers .offers-Container .choices .choiceThree:hover .choiceThreeTxt {
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.6),
                 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -513,15 +517,15 @@ nav {
     transition: all 0.3s ease;
 }
 
-.offers .choices .choiceOne:hover .choiceOneTxt .yogaClass,
-.offers .choices .choiceTwo:hover .choiceTwoTxt .Dynamic,
-.offers .choices .choiceThree:hover .choiceThreeTxt .high{
+.offers .offers-Container .choices .choiceOne:hover .choiceOneTxt .yogaClass,
+.offers .offers-Container .choices .choiceTwo:hover .choiceTwoTxt .Dynamic,
+.offers .offers-Container .choices .choiceThree:hover .choiceThreeTxt .high{
     color: #32aa27;
 } 
 
-.offers .choices .choiceOne:hover .choiceOneImg,
-.offers .choices .choiceTwo:hover .choiceTwoImg,
-.offers .choices .choiceThree:hover .choiceThreeImg {
+.offers .offers-Container .choices .choiceOne:hover .choiceOneImg,
+.offers .offers-Container .choices .choiceTwo:hover .choiceTwoImg,
+.offers .offers-Container .choices .choiceThree:hover .choiceThreeImg {
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.6),
                 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -529,9 +533,9 @@ nav {
     transition: all 0.3s ease;
 }
 
-.offers .choices .choiceOne,
-.offers .choices .choiceTwo,
-.offers .choices .choiceThree {
+.offers .offers-Container .choices .choiceOne,
+.offers .offers-Container .choices .choiceTwo,
+.offers .offers-Container .choices .choiceThree {
     margin: 20px;
     cursor: pointer;
 }
@@ -541,19 +545,23 @@ nav {
 
 .getIntouch{
     background-color: #ffffff;
-    height: 90vh;
+    height: fit-content;
     position: absolute;
     top: 220vh;
     width: 100%;
     z-index: 1;
     padding: 20px;
+}
+
+.getIntouch .getIntouch-Container{
+    padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.getIntouch .form .getIntouchHead p.getHead{
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -565,7 +573,7 @@ nav {
     
 }
 
-.getIntouch .form .getIntouchHead p.reachHead{
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -576,19 +584,19 @@ nav {
     width: 50vh;
 }
 
-.getIntouch .form{
+.getIntouch .getIntouch-Container .form{
     padding: 20px;
     margin: 30px;
 }
 
-.getIntouch .form .form-floating .form-control{
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
     width: 50vh;
     margin-top: 40px;
     border-color: #292c29;
     font-size: 14px;
 }
 
-.getIntouch .form .form-floating label{
+.getIntouch .getIntouch-Container .form .form-floating label{
     margin-top: -4px;
     font-size: 14px;
     font-style: normal;
@@ -596,18 +604,18 @@ nav {
     letter-spacing: 0px;
 }
 
-.getIntouch .form .form-floating label .required,
-.getIntouch .form .iAllow label .required{
+.getIntouch .getIntouch-Container .form .form-floating label .required,
+.getIntouch .getIntouch-Container .form .iAllow label .required{
     color: rgb(184, 40, 40);
     margin-left: 4px;
 }
-.getIntouch .form .iAllow{
+.getIntouch .getIntouch-Container .form .iAllow{
     width: 50vh;
     margin-top: 10px;
     border-color: #292c29;
 }
 
-.getIntouch .form .submitBtn .btn{
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
     margin-top: 30px;
     width: 50vh;
     background-color: #32aa27;
@@ -619,9 +627,9 @@ nav {
     text-align: center;
 }
 
-.getIntouch .map .contact-section {
+.getIntouch .getIntouch-Container .map .contact-section {
     width : 500px;
-    height: 80vh;
+    height: fit-content;
     margin: auto;
     background: white;
     padding: 20px;
@@ -629,7 +637,7 @@ nav {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
   
-.getIntouch .map iframe {
+.getIntouch .getIntouch-Container .map iframe {
     width: 100%;
     height: 220px;
     border: 0;
@@ -637,30 +645,29 @@ nav {
     margin-bottom: 25px;
 }
  
-.getIntouch .map h2 {
+.getIntouch .getIntouch-Container .map h2 {
     padding: 6px;
 }
 
-.getIntouch .map  .info-group {
+.getIntouch .getIntouch-Container .map  .info-group {
     margin-bottom: 10px;
 }
 
-.getIntouch .map .info-group a {
+.getIntouch .getIntouch-Container .map .info-group a {
     color: #007BFF;
     text-decoration: none;
 }
 
-
-.getIntouch .map .hours {
+.getIntouch .getIntouch-Container .map .hours {
     margin-top: 10px;
 }
 
-.getIntouch.map .hours div {
+.getIntouch .getIntouch-Container .map .hours div {
     display: flex;
     justify-content: space-between;
     padding: 4px 2px;
     border-bottom: 1px solid #eee;
-}
+}   
 
 /* newsletter */
 
@@ -872,7 +879,8 @@ footer .foot .contact .socMed{
 }
 
 .offers{
-    height: 100vh;
+    height: fit-content;
+    top:190vh ;
 }
 
 .offers .head{
@@ -914,72 +922,73 @@ footer .foot .contact .socMed{
 }
 
 .getIntouch{
-    height: 130vh;
-    top:250vh
+    top:350vh;
+    height: fit-content;
 }
+.getIntouch .getIntouch-Container{
+    padding: 20px;}
 
 
-.getIntouch .form .getIntouchHead p.getHead{
+.getIntouch .getIntouch-Container  .form .getIntouchHead p.getHead{
     font-size: 12px;
 }
 
-.getIntouch .form .getIntouchHead p.reachHead{
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
     font-size: 29px;
 }
 
-.getIntouch .form .form-floating .form-control{
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
     font-size: 14px;
     margin-top: 10px;
     width: 55vh;
 }
 
-.getIntouch .form .form-floating label{
+.getIntouch .getIntouch-Container .form .form-floating label{
     margin-top: -5px;
     font-size: 10px;
 }
 
-.getIntouch .form .iAllow{
+.getIntouch .getIntouch-Container .form .iAllow{
    font-size: 14px;
 }
 
-.getIntouch .form .submitBtn .btn{
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
     margin-top: 20px;
     font-size: 14px;
     height: 5vh;
     width: 55vh;
 }
 
-.getIntouch .map .contact-section {
-    width : 450px;
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 600px;
     height: fit-content;
-}
-.getIntouch .map iframe {
-    height: 200px;
+    margin-top: -100px;
 }
 
-.getIntouch .map  .info-group h2{
-    font-size: 20px;
+.getIntouch .getIntouch-Container .map  .info-group h2{
+    font-size: 18px;
+    margin-top: -10px;
 }
 
-.getIntouch .map  .info-group {
-    margin-bottom: 5px;
+.getIntouch .getIntouch-Container .map  .info-group {
+    margin-bottom: 2px;
 }
 
-.getIntouch .map .info-group p {
+.getIntouch .getIntouch-Container .map .info-group p {
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
-.getIntouch .map .hours {
-  font-size: small;
+.getIntouch .getIntouch-Container .map .hours {
+  font-size: 9px;
 }
 
-.getIntouch .map{
-    height: 600px;
+.getIntouch .getIntouch-Container .map{
+    height: 450px
 }
 
 .newsLetter{
-    top: 380vh;
-    height: 70vh;
+    top: 460vh;
+    height: fit-content;
 }
 
 .newsLetter .newsLetterForm .form{
@@ -1019,8 +1028,8 @@ footer .foot .contact .socMed{
 }
 
 footer{
-    height:100%;
-    top: 450vh;
+    height:fit-content;
+    top: 514vh;
 }
 
 footer .foot .footHead .FootbrandName .brand{
