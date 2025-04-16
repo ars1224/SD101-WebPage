@@ -14,6 +14,7 @@ html {
 body {
     background-color: #ffffff;
     line-height: 1.6;
+    height: max-content;
 }
 
 /* Nav Bar */
@@ -850,8 +851,8 @@ footer .foot .contact .socMed{
 }
 
 .description .image {
-    width:350px;
-    height: 410px;
+    width:250px;
+    height: 310px;
 }
 
 .description .text .titleDescrip{
@@ -870,8 +871,13 @@ footer .foot .contact .socMed{
     font-size: 1rem;
 }
 
+.offers{
+    height: 100vh;
+}
+
 .offers .head{
     width: 62%;
+    margin-top: -50px;
 }
 
 .offers .head .empower{
@@ -885,26 +891,31 @@ footer .foot .contact .socMed{
 .offers .choices .choiceOne .choiceOneImg,
 .offers .choices .choiceTwo .choiceTwoImg,
 .offers .choices .choiceThree .choiceThreeImg{
-    width: 290.33px;
-    height: 204.19px;
+    width: 250.33px;
+    height: 154.19px;
 }
 .offers .choices .choiceOne .choiceOneTxt,
 .offers .choices .choiceTwo .choiceTwoTxt,
 .offers .choices .choiceThree .choiceThreeTxt{
-    width:  290.33px;
-    height: 140px;
+    width:  250.33px;
+    height: 130px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .yogaClass p,
 .offers .choices .choiceTwo .choiceTwoTxt .Dynamic p,
 .offers .choices .choiceThree .choiceThreeTxt .high p{
-    font-size: 17.8px;
+    font-size: 15px;
 }
 
 .offers .choices .choiceOne .choiceOneTxt .tailored p,
 .offers .choices .choiceTwo .choiceTwoTxt .empower p,
 .offers .choices .choiceThree .choiceThreeTxt .get p{
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.getIntouch{
+    height: 130vh;
+    top:250vh
 }
 
 
@@ -940,6 +951,7 @@ footer .foot .contact .socMed{
 
 .getIntouch .map .contact-section {
     width : 450px;
+    height: fit-content;
 }
 .getIntouch .map iframe {
     height: 200px;
@@ -966,8 +978,8 @@ footer .foot .contact .socMed{
 }
 
 .newsLetter{
-    top: 310vh;
-    height: 50vh;
+    top: 380vh;
+    height: 70vh;
 }
 
 .newsLetter .newsLetterForm .form{
@@ -984,7 +996,7 @@ footer .foot .contact .socMed{
   }
 
 .newsLetter .newsLetterForm .form .form-floating input{
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 20px;
     width: 70vh;
     height: 20px
@@ -994,20 +1006,21 @@ footer .foot .contact .socMed{
     margin-left: 120px;
     font-size: 10px;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 70px;
 
 }
 
 .newsLetter .newsLetterForm .form .submitBtn .btn{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 28vh;
     height: 5vh;
+    font-size: 13px;
 
 }
 
 footer{
-    height: 100%;
-    top: 360vh;
+    height:100%;
+    top: 450vh;
 }
 
 footer .foot .footHead .FootbrandName .brand{
