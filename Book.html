@@ -26,10 +26,16 @@
                 <li class="li"><a href="index.html">Home</a></li>
                 <li class="li"><a href="Book.html">Book</a></li>
                 <li class="li"><a href="about.html">About ZenFIT</a></li>
-                <li><button type="button" class="btn">Join now!</button></li>
+                <li><button type="button" class="btn" id="join">Join now!</button></li>
             </ul>
         </div>
     </nav>
+
+     <!--Coverphoto-->
+     <div class="coverPhoto">
+        <img src="source/379221f8-11c3-11f0-8cf8-0242ac110002-jpeg-hero_image.jpeg" alt="Yoga studio">
+    </div>
+    
        <!--booking-->
 
        <!--booking process navigator-->
@@ -139,59 +145,61 @@
                         <div class="mb-3">
                             <label class="form-label">Contact No.<span class="required">&nbsp;*</span></label>
                             <input type="tel" class="form-control" id="contactNo" required>
+                            <label class="form-label">format: </label>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Pick a Scheduled date.<span class="required">&nbsp;*</span></label>
                             <input type="date" class="form-control" id="date" required>
                         </div>
                         
-                        <div class="timeRadio">
+                        <div class="timeSelection">
                             <span>Select Time<span class="required">&nbsp;*</span></span>
-                            <div class="btn-group btn-group-sm d-flex gap-2" role="group" aria-label="Time selection" required>
-                                <input type="radio" class="btn-check" name="time" id="time9am" value="9am">
+                            <div class="btn-group btn-group-sm d-flex gap-2" role="group" aria-label="Time selection" >
+                                <input type="radio" class="btn-check" name="time" id="time9am" value="9am" >
                                 <label class="btn btn-outline-primary" for="time9am">9 AM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time10am" value="10am">
+                                <input type="radio" class="btn-check" name="time" id="time10am" value="10am" >
                                 <label class="btn btn-outline-primary" for="time10am">10 AM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time11am" value="11am">
+                                <input type="radio" class="btn-check" name="time" id="time11am" value="11am" >
                                 <label class="btn btn-outline-primary" for="time11am">11 AM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time12pm" value="12pm">
+                                <input type="radio" class="btn-check" name="time" id="time12pm" value="12pm" >
                                 <label class="btn btn-outline-primary" for="time12pm">12 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time1pm" value="1pm">
+                                <input type="radio" class="btn-check" name="time" id="time1pm" value="1pm" >
                                 <label class="btn btn-outline-primary" for="time1pm">1 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time2pm" value="2pm">
+                                <input type="radio" class="btn-check" name="time" id="time2pm" value="2pm" >
                                 <label class="btn btn-outline-primary" for="time2pm">2 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time3pm" value="3pm">
+                                <input type="radio" class="btn-check" name="time" id="time3pm" value="3pm" >
                                 <label class="btn btn-outline-primary" for="time3pm">3 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time4pm" value="4pm">
+                                <input type="radio" class="btn-check" name="time" id="time4pm" value="4pm" >
                                 <label class="btn btn-outline-primary" for="time4pm">4 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time5pm" value="5pm">
+                                <input type="radio" class="btn-check" name="time" id="time5pm" value="5pm" >
                                 <label class="btn btn-outline-primary" for="time5pm">5 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time6pm" value="6pm">
+                                <input type="radio" class="btn-check" name="time" id="time6pm" value="6pm" >
                                 <label class="btn btn-outline-primary" for="time6pm">6 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time7pm" value="7pm">
+                                <input type="radio" class="btn-check" name="time" id="time7pm" value="7pm" >
                                 <label class="btn btn-outline-primary" for="time7pm">7 PM</label>
                         
-                                <input type="radio" class="btn-check" name="time" id="time8pm" value="8pm">
+                                <input type="radio" class="btn-check" name="time" id="time8pm" value="8pm" >
                                 <label class="btn btn-outline-primary" for="time8pm">8 PM</label>
                         
                                 <input type="radio" class="btn-check" name="time" id="time9pm" value="9pm">
                                 <label class="btn btn-outline-primary" for="time9pm">9 PM</label>
                             </div>
+                            <input type="text" name="selectedTime" id="selectedTime" required>
                         </div>
 
                         <div class="btns">
                             <button type="button" class="btn btn-secondary" id="Back">Back</button>
-                            <button type="button" class="btn btn-primary" id="toStep3">Continue to Payment</button>
+                            <button type="submit" class="btn btn-primary" id="toStep3">Continue to Payment</button>
                         </div>
                         
                     </form>
@@ -258,76 +266,6 @@
         </div>
     </div>
 
-
-    <!--footer-->
-       <!--
-       <footer>
-        <div class="foot">
-            <div class="footHead">
-                <div class="FootbrandName">
-                    <p class="brand">ZENFIT STUDIO</p>
-                </div>
-                <div class="nav">
-                    <ul class="FootNav">
-                        <li>
-                            <a href="index.html" style="text-decoration: none;">
-                                Home<span>&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="book.html" style="text-decoration: none;">
-                                Book<span>&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" style="text-decoration: none;">
-                                Classes<span>&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html" style="text-decoration: none;">
-                                Why ZenFIT?<span>&nbsp;|</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" style="text-decoration: none;">
-                                Join Now!<span>&nbsp;|</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="contact">
-                <p class="reach">Reach us out</p>
-                <p class="mail">
-                    <a href="mailto:270556059@yoobeestudent.ac.nz">
-                        <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;270556059@yoobeestudent.ac.nz
-                    </a>
-                </p>
-                <p class="address">Auckland CBD, Auckland, New Zealand</p>
-                <p class="sched">Mon - Fri: 9:00am – 10:00pm; &nbsp;<br> Sat: 9:00am – 6:00pm; &nbsp;<br> Sunday9:00am – 12:00pm</p>
-                <div class="socMed">
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="under">
-            <div class="owner">
-                <span>Developed and Design by: Jhon Aries Tayao</span>
-            </div>
-        </div>
-       
-    </footer>-->
 
     <script src="Script/script.js"></script>
     <script src="Script/script-booking.js"></script>

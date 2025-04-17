@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    line-height: 1.6;
+    height: max-content;
+}
+
+/* Nav Bar */
+
+nav {
+    background-color: #ffffff;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh;
+}
+
+.navBar .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.headNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    list-style: none;
+}
+
+.headNav li a {
+    list-style: none;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #595959;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.brandName  {
+    cursor: pointer;
+}
+
+.navBar .brandName .brand a{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+   color: #020402;
+}
+
+.headNav li .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 30px;
+    color: #020402;
+    border: 2px solid #020402;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.headNav li .btn:hover {
+    color: #ffffff;
+    border: 2px solid #32aa27;
+    background-color: #32aa27;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.headNav li a:hover {
+    color: #32aa27;
+}
+
+.headNav .li:hover{
+    color: #32aa27;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transition: all text-underline-offset 0.3s ease;
+}
+
+/* Cover Page */
+
+.coverPhoto img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.coverPhoto::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+/* content */
+.offer{
+    background-color: #ffffff;
+    top: 90px;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+}
+
+.offer .offer-container{
+    margin-top: 30px;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer .offer-container .offerPhoto{
+    width:600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
+}
+
+.offer .offer-container .offerPhoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position:left; 
+}
+
+.offer .offer-container .offerText{
+    width: 30%;
+    margin-left: 10vh;
+}
+
+.offer .offer-container .offerText p{
+    margin-bottom: 10px;
+}
+.offer .offer-container .offerText .title{
+    color: #32aa27;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.offer .offer-container .offerText .description{
+    color:#727272;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.offer .offer-container .offerText .book a{
+    color:#727272;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.offer .offer-container .offerText .book a:hover{
+    color: #32aa27;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/*get in touch */
+
+.getIntouch{
+    background-color: #ffffff;
+    height: fit-content;
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+
+.getIntouch .getIntouch-Container{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #32aa27;
+    
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+    width: 50vh;
+}
+
+.getIntouch .getIntouch-Container .form{
+    padding: 20px;
+    margin: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 50vh;
+    margin-top: 40px;
+    border-color: #292c29;
+    font-size: 14px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label{
+    margin-top: -4px;
+    font-size: 14px;
+    font-style: normal;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label .required,
+.getIntouch .getIntouch-Container .form .iAllow label .required{
+    color: rgb(184, 40, 40);
+    margin-left: 4px;
+}
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 50vh;
+    margin-top: 10px;
+    border-color: #292c29;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 30px;
+    width: 50vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 500px;
+    height: fit-content;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+  
+.getIntouch .getIntouch-Container .map iframe {
+    width: 100%;
+    height: 220px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+ 
+.getIntouch .getIntouch-Container .map h2 {
+    padding: 6px;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    margin-bottom: 10px;
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+
+.getIntouch .getIntouch-Container .map .hours div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 2px;
+    border-bottom: 1px solid #eee;
+}   
+
+/* newsletter */
+
+.newsLetter{
+    background-color: #eef1ef;
+    height: fit-content;
+    position: absolute;
+    top: 169vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.newsLetter .newsLetterForm .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    margin-right: 20px;
+    width: 50vh;
+    margin: 10px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    border-radius: 30px;
+    border-color: #292c29;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    margin-left: 20px;
+    font-size: 14px;
+    font-style: normal;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label .required{
+    color: rgb(184, 40, 40);
+    margin-left: 4px;
+}
+
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 20vh;
+    height: 4vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 23px;
+    font-style: oblique;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: #141313;
+    text-transform: uppercase;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color:#292c29;
+    height: 50%;
+    position: absolute;
+    top: 190vh;
+    width: 100%;
+    z-index: 1;
+}
+
+footer .foot{
+     width: 100%; 
+     color:#acacac;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+    width: 100%;
+}
+
+footer .foot .footHead{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+footer .foot .footHead .FootbrandName .brand{
+    font-size: 26px;
+    font-weight: 800;
+    inline-size: 1.5;
+    letter-spacing: 0px;
+}
+
+footer .foot .footHead .nav .FootNav{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer .foot .footHead .nav .FootNav li a {
+    margin-right: 30px;
+    font-size: 14px;
+    color:#acacac;
+}
+footer .foot .footHead .nav .FootNav li:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transition: text-underline-offset 0.2s ease;
+}
+footer .under{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .under .owner span,
+footer .foot .contact .socMed i,
+footer .foot .contact .mail a{
+    color:#acacac;
+    text-decoration: none;
+}
+
+footer .under .owner span{
+    font-size: 14px;
+}
+
+footer .foot .contact p{
+    font-size: 14px;
+}
+
+footer .foot .contact .socMed{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 150px;
+}

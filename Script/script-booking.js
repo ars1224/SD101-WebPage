@@ -19,19 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("toStep2");
   const form = document.querySelector("#step2 form");
   const userForm = document.querySelector("#step2");
-  const dropdownItems = document.querySelectorAll('.dropdown-item');
-  const dropdownButton = document.querySelector('.dropdown-toggle');
   const hiddenInput = document.getElementById('selectedTime');
   const priceDisplay = document.getElementById('priceDisplay');
   const toStep3Btn = document.getElementById('toStep3');
   const thankYouPage = document.getElementById("thankYouPage");
   const payArrivalSubmitBtn = document.getElementById("payArrivalSubmit");
-  const payArrivalRadio1 = document.getElementById("payArrivalRadio");
   const referenceNumber = document.getElementById("reference-number");
-  const arrivalBtn = document.getElementById("payArrivalSubmit");
   const payArrivalSubmit = document.getElementById("payArrivalSubmit");
   const allFormSections = document.querySelectorAll(".form-section");
   const submitButton = document.querySelector("#toStep3");
+  const timeRadios = document.querySelectorAll('input[name="time"]');
+  const contactNoField = document.getElementById("contactNo");
+const contactNo = contactNoField?.value.trim();
+const phonePattern = /^[0-9+\-()\s]{7,15}$/;
 
   let currentStep = 0;
 
@@ -206,38 +206,70 @@ document.addEventListener("DOMContentLoaded", () => {
     return `REF-${now.slice(-5)}-${rand}`;
   }
 
-  // Dropdown time selection
-  dropdownItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const time = item.textContent;
-      dropdownButton.textContent = time;
-      hiddenInput.value = time;
-    });
-  });
-
   // Time slot check
   toStep3Btn?.addEventListener('click', (e) => {
-    if (!hiddenInput.value.trim()) {
+    const allowedTimes = Array.from(timeRadios).map(r => r.value.toLowerCase());
+    const selectedTime = hiddenInput.value.trim().toLowerCase();
+  
+    // Time slot validation
+    if (!allowedTimes.includes(selectedTime)) {
       e.preventDefault();
-      alert("Please select a time slot before proceeding.");
+      alert("Please select a valid time slot before proceeding.");
+      return;
+    }
+  
+    // Contact number validation
+    const contactNoField = document.getElementById("contactNo");
+    const contactNo = contactNoField?.value.trim();
+    const phonePattern = /^[0-9+\-()\s]{7,15}$/;
+  
+    // Remove previous error if any
+    contactNoField?.classList.remove("input-error");
+    contactNoField?.nextElementSibling?.classList?.contains("error-message") && contactNoField.nextElementSibling.remove();
+  
+    if (contactNoField && !phonePattern.test(contactNo)) {
+      e.preventDefault();
+      contactNoField.classList.add("input-error");
+  
+      const error = document.createElement("div");
+      error.className = "error-message";
+      error.style.color = "red";
+      error.style.fontSize = "0.9rem";
+      error.style.marginTop = "4px";
+      error.textContent = "Please enter a valid contact number.";
+      contactNoField.insertAdjacentElement("afterend", error);
+      return;
     }
   });
 
-  payArrivalRadio1.addEventListener("change", () => {
-    if (payArrivalRadio1.checked) {
-      referenceNumber.style.display = "block";
-      payArrivalSubmit.style.display = "inline-block";
-    }
-  });
 
-  payArrivalSubmit.addEventListener("click", () => {
+  payArrivalRadio.addEventListener("change", () => {
+    if (payArrivalRadio.checked) {
+        referenceNumber.style.display = "block";
+        payArrivalSubmit.style.display = "inline-block";
+    }
+});
+
+payArrivalSubmit.addEventListener("click", () => {
     allFormSections.forEach(section => section.classList.add("hidden"));
     thankYouPage.classList.remove("hidden");
-    thankYouPage.style.display = "flex";
 
+    // Reload page after 10 seconds
     setTimeout(() => {
-      window.location.href = "Book.html";
-    }, 10000);
+        window.location.href = "Book.html"; // or use `window.location.reload();` if you're staying on the same page
+    }, 10000); // 10000 milliseconds = 10 seconds
+});
+
+
+timeRadios.forEach(radio => {
+  radio.addEventListener('change', function() {
+      if (this.checked) {
+        hiddenInput.value = this.value;
+        hiddenInput.dispatchEvent(new Event('input')); // this line is important
+      }
   });
+});
+
+
+
 });

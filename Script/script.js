@@ -58,3 +58,31 @@ hamburger.addEventListener('click', () => {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Elements
+  const navigateButton = document.getElementById("join");
+  const navigateButton2 = document.getElementById("join2");
+  const yogapage = document.getElementById("yoga");
+  const pilatesPage = document.getElementById("pilates");
+  const hiitPage = document.getElementById("hiit");
+  
+    // Event Listener for Navigation
+    navigateButton?.addEventListener("click", () => {
+      window.location.href = "join.html"; // Replace "newPage.html" with the URL of the page you want to navigate to
+    });
+    yogapage?.addEventListener("click", () => {
+        window.location.href = "yoga.html"; // Replace "newPage.html" with the URL of the page you want to navigate to
+      });
+      pilatesPage?.addEventListener("click", () => {
+          window.location.href = "pilates.html"; // Replace "newPage.html" with the URL of the page you want to navigate to
+        });
+        hiitPage?.addEventListener("click", () => {
+            window.location.href = "hiit.html"; // Replace "newPage.html" with the URL of the page you want to navigate to
+          });
+        navigateButton2?.addEventListener("click", () => {
+              window.location.href = "join.html"; // Replace "newPage.html" with the URL of the page you want to navigate to
+            });
+  
+  });
+  
