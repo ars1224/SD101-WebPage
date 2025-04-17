@@ -8,11 +8,13 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 body {
     background-color: #ffffff;
+    line-height: 1.6;
+    height: max-content;
 }
 
 /* Nav Bar */
@@ -107,22 +109,69 @@ nav {
 
 /* Booking */
 .booking {
-    height: 750px;
+    height: 79%;
     width: 99%;
     margin: 10px;
     top: 110px;
     position: absolute;
     z-index: 2;
+    background-color: #ffffff;
 }
 
-.hidden {
-    display: none;
+.booking .booking-Container .progress {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    height: fit-content;
+    background-color: #eef1ef;
+}
+
+.booking .booking-Container .progress .progress-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    transition: all 0.3s ease; 
+}
+
+.progress-step {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    color: #2c2c2c;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .progress-step.active {
+    background-color: #28a745;
+    color:#ffffff;
+    border-radius: 20px;
+  }
+
+.booking .booking-Container .member span .required {
+    color: rgb(204, 37, 37);
+    margin-left: 4px;
+}
+
+.booking .booking-Container .progress .progress-step.active {
+    color: #32aa27;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease-in;
+    color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .info-text {
     color: #32aa27;
     margin-top: 10px;
     font-weight: 500;
+}
+.hidden {
+    display: none;
 }
 
 .payment-card {
@@ -131,68 +180,6 @@ nav {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-}
-
-.booking .progress {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-    height: fit-content;
-    background-color: #ffffff;
-}
-
-.booking .progress .progress-step {
-    text-align: center;
-    flex: 1;
-    position: relative;
-    transition: all 0.3s ease; /* smooth transitions */
-}
-
-.booking .progress .progress-step::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: #aaaaaa;
-    border-radius: 50%;
-    display: inline-block;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.booking .progress .progress-step:not(:first-child)::after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: -50%;
-    width: 100%;
-    height: 2px;
-    background-color: #2b5228;
-    z-index: -1;
-}
-
-.booking .progress .progress-step.active::after {
-    background-color: #32aa27;
-}
-
-.booking .progress .progress-step.active::before {
-    background-color: #32aa27;
-}
-
-.booking .member span .required {
-    color: rgb(204, 37, 37);
-    margin-left: 4px;
-}
-
-.booking .progress .progress-step.active {
-    color: #32aa27;
-    font-weight: bold;
-    animation: fadeIn 0.3s ease-in;
-    color: #000000;
-    padding: 10px;
-    border-radius: 4px;
-    font-weight: bold;
 }
 
 @keyframes fadeIn {
@@ -209,7 +196,327 @@ input[type="radio"].d-none + span {
     color: white;
     background-color: #32aa27;
   }
+
+  .input-error {
+    border: 2px solid red !important;
+    outline: none;
+  }
   
+/* radio btn choices */
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne .choiceOneImg,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo .choiceTwoImg,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree .choiceThreeImg{
+    width: 321.33px;
+    height: 214.19px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.815);
+  }
+
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne .choiceOneImg img,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo .choiceTwoImg img,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree .choiceThreeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    object-position:l
+  }
+
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne .choiceOneTxt,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo .choiceTwoTxt,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree .choiceThreeTxt{
+    width: 321.33px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+  }
+
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceOneTxt .yogaClass p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceTwoTxt .Dynamic p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceThreeTxt .high p{
+    font-size: 30px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceOneTxt .tailored p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceTwoTxt .empower p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn.choiceThreeTxt .get p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne:hover .choiceOneImg,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo:hover .choiceTwoImg,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree:hover .choiceThreeImg,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne:hover .choiceOneTxt,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo:hover .choiceTwoTxt,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree:hover .choiceThreeTxt{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.356),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+transform: scale(1.02);
+transition: all 0.3s ease;
+  }
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceOne:hover .choiceOneTxt .tailored p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceTwo:hover .choiceTwoTxt .empower p,
+  .booking .booking-Container .form-section .class .choices .btn-group .btn .choiceThree:hover .choiceThreeTxt .get p{
+    color: #32aa27;
+}
+
+/* radio btn */
+.booking .booking-Container .form-section .member .btn-group .btn,
+.booking .booking-Container .form-section .paymentMethod .btn-group .btn{
+border-color: black;
+color: #000000;
+box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking .booking-Container .form-section .member .btn-group .btn:hover,
+.booking .booking-Container .form-section .paymentMethod .btn-group .btn:hover{
+    background-color: #32aa27;
+    color:#ffffff;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.74),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking .booking-Container .form-section .class .choices .btn-group .btn{
+    border-color: none;
+    border: none;
+    color: #000000;
+}
+
+
+input[type="radio"].btn-check:checked + label {
+    background-color: #32aa27;
+    color: white; 
+    border-color: #32aa27;
+  }
+  
+  /* Specific to your class cards */
+  #yoga:checked + label #choiceYoga,
+  #pilates:checked + label #choicePilates,
+  #hiit:checked + label #choiceHIIT {
+    box-shadow: 0 0 10px #32aa27;
+    border: 2px solid #32aa27;
+    border-radius: 10px;
+  }
+
+  .btn-check:checked + label:hover {
+    background-color: #28a722;
+  }
+
+    /* Container*/
+
+.booking .booking-Container{
+    border-color: #00000065;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.74),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-width: 2px;
+    height:85vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #eef1ef;
+}
+
+.booking .booking-Container .form-section{
+    margin-top:120px;
+}
+.booking .booking-Container .form-section .member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking .booking-Container .class{
+    padding-top: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking .booking-Container .class .choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking .booking-Container .form-section .member .btn-group,
+.booking .booking-Container .class .choices .btn-group{
+    padding-top: 15px;
+}
+
+.booking .booking-Container .class .choices .btn-group{
+    margin-bottom: 30px;
+}
+
+#toStep2{
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+    background-color: #32aa27;
+    color: #ffffff;
+    border-color: #32aa27;
+    letter-spacing: normal;
+    inline-size:normal;
+    width: 200px;
+    border-radius: 20px;
+  }
+  #toStep2.show {
+    opacity: 2;
+   display: block;
+  }
+
+  #toStep2:hover{
+    letter-spacing: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /*form*/
+
+  #step2{
+    margin-top: 20px;
+  }
+
+  #step2 .form {
+    border-color: #00000065;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.74),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-width: 2px;
+    width:fit-content;
+    height: 100%;
+    margin-left: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+  }
+
+  #step2 .form span{
+    padding-bottom: 30px;
+  }
+
+  #step2 .form #userDetailsForm .mb-3 .form-control{
+    width: 40rem;
+    border-color: #595959;
+
+  }
+
+  #step2 .form #userDetailsForm{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+
+  /*btn Time */
+  #step2 .form #userDetailsForm .timeRadio{
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  #step2 .form #userDetailsForm .timeRadio span{
+    margin-bottom: 10px;
+  }
+  #step2 .form #userDetailsForm .timeRadio .btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+ 
+
+  #step2 .form #userDetailsForm .btns #toStep3{
+    transition: opacity 0.3s ease;
+    background-color: #32aa27;
+    color: #ffffff;
+    border-color: #32aa27;
+    letter-spacing: normal;
+    inline-size:normal;
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  #step2 .form #userDetailsForm .btns #Back{
+    transition: opacity 0.3s ease;
+    background-color: #706f6f;
+    color: #ffffff;
+    background-color: #706f6f;
+    letter-spacing: normal;
+    inline-size:normal;
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  /*Payment*/
+#step3{
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+#paymentForm{
+    border-color: #00000065;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.74),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-width: 2px;
+    width: 100vh;
+    padding: 30px;
+}
+
+#priceBox {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 200px;
+    float: right;
+    margin-left: 20px;
+}
+#priceDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#paymentForm .payOnstore button{
+    display: none;
+}
+
+.booking-Container #thankYouPage{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
 
 /* Optional Footer Code — Uncomment if you need it later */
 /*
