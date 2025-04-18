@@ -58,7 +58,6 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
     // Elements
   const navigateButton = document.getElementById("join");

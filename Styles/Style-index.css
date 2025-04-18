@@ -834,7 +834,7 @@ footer .foot .contact .socMed{
     align-items: start;
     width: 150px;
 }
-@media (min-width: 1200px) and (max-width: 1599px){
+@media (min-width: 1199px) and (max-width: 1599px){
 
     nav{
         height: 11.8vh;
@@ -860,6 +860,55 @@ footer .foot .contact .socMed{
     height: 40px;
     font-size: .8rem;
    }
+
+   .offers{
+    top: 200vh;
+   }
+
+   .description .description-Container .image {
+    width:250px;
+    height: 350px;
+}
+
+
+.description .description-Container .text .titleDescrip{
+    font-size: 12px;
+}
+.description .description-Container .text .headDescrip{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+.description .description-Container .text .descrip{
+    display: block;
+    unicode-bidi: isolate;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #595959;
+}
+.description .description-Container .text .getinTouchlink{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: none;
+    text-align: inherit;
+    transition: none;
+    background: none;
+    height: auto;
+    text-transform: none;
+    text-decoration: underline;
+    color: #595959;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
 
