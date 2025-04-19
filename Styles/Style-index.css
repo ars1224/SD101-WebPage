@@ -34,7 +34,7 @@ nav {
 
 .navBar .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -49,13 +49,13 @@ nav {
 
 .headNav li a {
     list-style: none;
-    padding-top: 6px;
+    padding-top: .375rem;
     text-align: center;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.25;
-    letter-spacing: 1px;
+    letter-spacing: .063;
     color: #595959;
     cursor: pointer;
     text-decoration: none;
@@ -66,11 +66,11 @@ nav {
 }
 
 .navBar .brandName .brand a{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.25;
-    letter-spacing: 1.4px;
+    letter-spacing: .088rem;
     text-transform: uppercase;
    color: #020402;
 }
@@ -549,7 +549,7 @@ nav {
     background-color: #ffffff;
     height:100%;
     position: absolute;
-    top: 220vh;
+    top: 250vh;
     width: 100%;
     z-index: 1;
     padding: 20px;
@@ -834,7 +834,9 @@ footer .foot .contact .socMed{
     align-items: start;
     width: 150px;
 }
-@media (min-width: 1199px) and (max-width: 1599px){
+
+
+@media (min-width: 1200px) and (max-width: 1600px){
 
     nav{
         height: 11.8vh;
@@ -861,74 +863,410 @@ footer .foot .contact .socMed{
     font-size: .8rem;
    }
 
-   .offers{
-    top: 200vh;
+   .description .description-Container .image {
+    width:250px;
+    height: 350px; 
+}
+.description .description-Container .text .titleDescrip{
+    font-size: 11px;
+}
+.description .description-Container .text .headDescrip{
+    font-size: 13px;
+}
+.description .description-Container .text .descrip{
+    font-size: 17px;
+}
+.description .description-Container .text .getinTouchlink{
+    font-size: 15px;
+}
+
+.offers{
+    top: 185vh;
+   }
+
+.offers-Container .head{
+    margin-top: 50px;
+}
+.offers .offers-Container .head .empower{
+    font-size: 13px;
+}
+
+.offers .offers-Container .head .personalized{
+    font-size: 28px;
+}
+
+   .offers .offers-Container .choices .choiceOne .choiceOneImg,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoImg,
+   .offers .offers-Container .choices .choiceThree .choiceThreeImg{
+    min-width: 315px;
+    min-height: 190px;
+    max-width: 315px;
+    max-height: 190px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt{
+    min-width: 315px;
+    min-height: 150px;
+   }
+   
+ 
+
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 18px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 15px;
+   }
+
+  .getIntouch{
+    top: 280vh;
+    height: fit-content;
+   }
+
+   .getIntouch .getIntouch-Container{
+    padding: 30px;
+    flex-direction: column-reverse;
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 14px
+    
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 30px;
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form{
+    padding: 20px;
+    margin: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 100vh;
+    margin-top: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label{
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 30px;
+    width: 100vh;
+    height: 6vh;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    min-width : 100vh;
+}
+  
+.getIntouch .getIntouch-Container .map h2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    font-size: small
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+ 
+   .newsLetter{
+    top: 485vh;
+   }
+
+   
+.newsLetter .newsLetterForm .form{
+    flex-direction: column;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 100vh;
+    margin: 5px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    font-size: 12px;
+}
+.newsLetter .newsLetterForm .form .submitBtn{
+    margin-top: 20px;
+}
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 50vh;
+    height: 6vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 18px;
+}
+
+   footer{
+    top: 555vh;
+   }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+
+    .headNav {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: -1;
+        justify-content:space-evenly;
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  100px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+      }
+  
+    .headNav li .btn {
+        height: 30px;
+        font-size: .7rem;
+    }
+
+    nav{
+        height: 11.8vh;
+    }
+
+    .title h1{
+        font-size: 45px;
+   }
+   .title h6 {
+       font-size: 17px;
+   }
+   
+   .title .btn1 {
+    height: 35px;
+    font-size: .75rem;
    }
 
    .description .description-Container .image {
-    width:250px;
-    height: 350px;
+    width:300px;
+    height: 310px; 
 }
-
-
 .description .description-Container .text .titleDescrip{
-    font-size: 12px;
+    font-size: 11px;
 }
 .description .description-Container .text .headDescrip{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: 0px;
-    text-transform: none;
-    margin-bottom: 10px;
+    font-size: 13px;
 }
 .description .description-Container .text .descrip{
-    display: block;
-    unicode-bidi: isolate;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    text-transform: none;
-    color: #595959;
+    font-size: 14px;
 }
 .description .description-Container .text .getinTouchlink{
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 0px;
-    text-transform: none;
-    text-align: inherit;
-    transition: none;
-    background: none;
-    height: auto;
-    text-transform: none;
-    text-decoration: underline;
-    color: #595959;
+    font-size: 15px;
 }
-}
-@media (min-width: 992px) and (max-width: 1199px){
 
+.offers{
+    top: 190vh;
+   }
+
+.offers-Container .head{
+    margin-top: 50px;
+}
+.offers .offers-Container .head .empower{
+    font-size: 13px;
+}
+
+.offers .offers-Container .head .personalized{
+    font-size: 28px;
+}
+
+   .offers .offers-Container .choices .choiceOne .choiceOneImg,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoImg,
+   .offers .offers-Container .choices .choiceThree .choiceThreeImg{
+    width: 275px;
+    height: 150px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt{
+    width: 275px;
+    height: 150px;
+   }
+   
+ 
+
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 15px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 13px;
+   }
+
+  .getIntouch{
+    top: 290vh;
+    height: fit-content;
+   }
+
+   .getIntouch .getIntouch-Container{
+    padding: 30px;
+    flex-direction: column;
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 14px
+    
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 30px;
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form{
+    padding: 20px;
+    margin: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 100vh;
+    margin-top: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label{
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 30px;
+    width: 100vh;
+    height: 6vh;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 100vh;
+}
+  
+.getIntouch .getIntouch-Container .map h2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    font-size: small
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+ 
+   .newsLetter{
+    top: 3050px;
+   }
+
+   
+.newsLetter .newsLetterForm .form{
+    flex-direction: column;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 100vh;
+    margin: 5px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    font-size: 12px;
+}
+.newsLetter .newsLetterForm .form .submitBtn{
+    margin-top: 20px;
+}
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 50vh;
+    height: 6vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 18px;
+}
+
+   footer{
+    top: 3400px;
+   }
+}
+@media (min-width: 768px) and (max-width: 992px){
     .headNav {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        top: 90px;
+        top: 60px;
         right: 0;
         background-color: white;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        z-index: 999;
-        justify-content:space-evenly
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: -1;
+        justify-content:space-evenly;
       }
     
       .headNav.show {
         display: flex;
         width: 100%;
-        height:  200px;
+        height:  100px;
       }
     
       .navBar .hamburger {
@@ -942,37 +1280,235 @@ footer .foot .contact .socMed{
         align-items: end;
         
       }
-    nav {
-        height: 11vh;
-    }
   
     .headNav li .btn {
         height: 30px;
         font-size: .7rem;
     }
 
-    .headNav {
-        width: 40%;
+    nav{
+        height: 11.8vh;
     }
+
+    .title {
+        margin-left: -40vh;
+    }
+
+    .title h1{
+        font-size: 45px;
+   }
+   .title h6 {
+       font-size: 17px;
+   }
+   
+   .title .btn1 {
+    height: 35px;
+    font-size: .75rem;
+   }
+
+   .description {
+    height:fit-content;
 }
-@media (min-width: 768px) and (max-width: 991px){
+
+   .mainContainer .description-Container{
+    flex-direction: column-reverse;
+}
+
+.description .description-Container .text{
+    width: 100%;
+}
+
+   .description .description-Container .image {
+    margin-bottom: 40px;
+    width:100%;
+    height: 310px; 
+}
+.description .description-Container .text .titleDescrip{
+    font-size: 11px;
+}
+.description .description-Container .text .headDescrip{
+    font-size: 13px;
+}
+.description .description-Container .text .descrip{
+    font-size: 14px;
+}
+.description .description-Container .text .getinTouchlink{
+    font-size: 15px;
+}
+
+.offers{
+    top: 210vh;
+    height: fit-content;
+   }
+
+.offers-Container .head{
+    margin-top: 50px;
+}
+.offers .offers-Container .head .empower{
+    font-size: 13px;
+}
+
+.offers .offers-Container .head .personalized{
+    font-size: 28px;
+}
+
+.offers .offers-Container .choices{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+   .offers .offers-Container .choices .choiceOne .choiceOneImg,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoImg,
+   .offers .offers-Container .choices .choiceThree .choiceThreeImg{
+    width: 450px;
+    height: 250px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt{
+    width: 450px;
+    height: 150px;
+   }
+   
+ 
+
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 23px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 18px;
+   }
+
+  .getIntouch{
+    top: 485vh;
+    height: fit-content;
+   }
+
+   .getIntouch .getIntouch-Container{
+    padding: 30px;
+    flex-direction: column-reverse;
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 14px
+    
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 30px;
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form{
+    padding: 20px;
+    margin: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 100vh;
+    margin-top: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label{
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 100vh;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 30px;
+    width: 100vh;
+    height: 6vh;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 100vh;
+}
+  
+.getIntouch .getIntouch-Container .map h2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    font-size: small
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+ 
+   .newsLetter{
+    top: 4080px;
+   }
+
+   
+.newsLetter .newsLetterForm .form{
+    flex-direction: column;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 100vh;
+    margin: 5px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    font-size: 12px;
+}
+.newsLetter .newsLetterForm .form .submitBtn{
+    margin-top: 20px;
+}
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 50vh;
+    height: 6vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 18px;
+}
+
+   footer{
+    top: 4400px;
+   }
+}
+@media (min-width: 481px) and (max-width: 768px){
     .headNav {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        top: 90px;
+        top: 60px;
         right: 0;
         background-color: white;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        z-index: 999;
-        justify-content:space-evenly
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: -1;
+        justify-content:space-evenly;
       }
     
       .headNav.show {
         display: flex;
         width: 100%;
-        height:  200px;
+        height:  100px;
       }
     
       .navBar .hamburger {
@@ -984,40 +1520,310 @@ footer .foot .contact .socMed{
         display: flex;
         justify-content: center;
         align-items: end;
-        font-size: 34px;
         
       }
-    nav {
-        height: 11vh;
-    }
   
     .headNav li .btn {
         height: 30px;
         font-size: .7rem;
     }
 
-    .headNav {
-        width: 40%;
+    nav{
+        height: 11.8vh;
     }
+
+    .title {
+        margin-left: -20vh;
+    }
+
+    .title h1{
+        font-size: 35px;
+   }
+   .title h6 {
+       font-size: 15px;
+   }
+   
+   .title .btn1 {
+    height: 30px;
+    width: 40vh;
+    font-size: 12px;
+   }
+
+   .description {
+    height:fit-content;
 }
-@media (min-width: 481px) and (max-width: 767px){
+
+   .mainContainer .description-Container{
+    padding: 30px;
+    flex-direction: column-reverse;
+}
+
+.description .description-Container .text{
+    width: 100%;
+}
+
+   .description .description-Container .image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:100%;
+    height: 310px; 
+}
+.description .description-Container .text .titleDescrip{
+    font-size: 11px;
+}
+.description .description-Container .text .headDescrip{
+    font-size: 13px;
+}
+.description .description-Container .text .descrip{
+    font-size: 14px;
+}
+.description .description-Container .text .getinTouchlink{
+    font-size: 15px;
+}
+
+.offers{
+    top: 210vh;
+    height: fit-content;
+   }
+
+.offers-Container .head{
+    margin-top: 50px;
+}
+.offers .offers-Container .head .empower{
+    font-size: 13px;
+}
+
+.offers .offers-Container .head .personalized{
+    font-size: 28px;
+}
+
+.offers .offers-Container .choices{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+   .offers .offers-Container .choices .choiceOne .choiceOneImg,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoImg,
+   .offers .offers-Container .choices .choiceThree .choiceThreeImg{
+    width: 400px;
+    height: 250px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt{
+    width: 400px;
+    height: 150px;
+   }
+   
+ 
+
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 23px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 18px;
+   }
+
+  .getIntouch{
+    top: 485vh;
+    height: fit-content;
+   }
+
+   .getIntouch .getIntouch-Container{
+    flex-direction: column-reverse;
+    padding: 0px;
+
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 20px
+    
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 14px;
+    width: 45vh;
+}
+
+.getIntouch .getIntouch-Container .form{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 65vh;
+    margin-top: 30px;
+}
+
+.getIntouch .getIntouch-Container .form .form-floating label{
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 65vh;
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 20px;
+    width: 65vh;
+    height: 6vh;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 70vh;
+}
+  
+.getIntouch .getIntouch-Container .map h2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    font-size: small
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+ 
+   .newsLetter{
+    top: 4035px;
+   }
+
+   
+.newsLetter .newsLetterForm .form{
+    flex-direction: column;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 80vh;
+    margin: 5px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    font-size: 12px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    font-size: 12px;
+}
+.newsLetter .newsLetterForm .form .submitBtn{
+    margin-top: 20px;
+}
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 50vh;
+    height: 6vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 18px;
+}
+
+   footer{
+    top: 4400px;
+   }
+
+   footer .foot{
+   justify-content:space-around;
+   flex-direction: column;
+}
+
+footer .foot .footHead{
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+   align-items: center;
+}
+
+footer .foot .footHead .FootbrandName .brand{
+   font-size: 26px;
+   font-weight: 800;
+   inline-size: 1.5;
+   letter-spacing: 0px;
+}
+
+footer .foot .footHead .nav .FootNav{
+   display:flex;
+   flex-direction: row;
+   list-style: none;
+}
+
+footer .foot .footHead .nav .FootNav li a {
+   margin-right: 30px;
+   font-size: 14px;
+   color:#acacac;
+}
+footer .foot .footHead .nav .FootNav li:hover{
+   text-decoration: underline;
+   text-underline-offset: 10px;
+   transition: text-underline-offset 0.2s ease;
+}
+footer .under{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+footer .under .owner span,
+footer .foot .contact .socMed i,
+footer .foot .contact .mail a{
+   color:#acacac;
+   text-decoration: none;
+}
+
+footer .under .owner span{
+   font-size: 14px;
+}
+
+footer .foot .contact p{
+   font-size: 14px;
+}
+
+footer .foot .contact .socMed{
+   font-size: 18px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: start;
+   width: 150px;
+}
+}
+@media (min-width: 320px) and (max-width: 481px){
+    nav .navBar .brandName .brand a{
+        font-size: 15px;
+    }
     .headNav {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
-        top: 90px;
+        top: 60px;
         right: 0;
         background-color: white;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        z-index: 999;
-        justify-content:space-evenly
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: -1;
+        justify-content:space-evenly;
       }
     
       .headNav.show {
         display: flex;
         width: 100%;
-        height:  200px;
+        height:  100px;
       }
     
       .navBar .hamburger {
@@ -1029,70 +1835,294 @@ footer .foot .contact .socMed{
         display: flex;
         justify-content: center;
         align-items: end;
-        font-size: 34px;
         
       }
-    nav {
-        height: 11vh;
+
+      .headNav li a {
+        font-size: 11px;
     }
   
     .headNav li .btn {
         height: 30px;
-        font-size: .7rem;
+        width: 160px;
+        font-size: 14px;
+    }
+    nav{
+        height: 11.8vh;
     }
 
-    .headNav {
-        width: 40%;
+    .title {
+        margin-left: 5vh;
     }
+
+    .title h1{
+        font-size: 35px;
+   }
+   .title h6 {
+       font-size: 15px;
+   }
+   
+   .title .btn1 {
+    height: 30px;
+    width: 30vh;
+    font-size: 12px;
+   }
+
+   .mainContainer #OffersNav{
+    font-size: 10px;
+   }
+
+   .description {
+    height:fit-content;
 }
-@media (min-width: 320px) and (max-width: 480px){
-    .headNav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: white;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        z-index: 999;
-        justify-content:space-evenly
-      }
+
+   .mainContainer .description-Container{
+    padding: 30px;
+    flex-direction: column-reverse;
+}
+
+.description .description-Container .text{
+    width: 100%;
+}
+
+   .description .description-Container .image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:100%;
+    height: 310px; 
+}
+.description .description-Container .text .titleDescrip{
+    font-size: 11px;
+}
+.description .description-Container .text .headDescrip{
+    font-size: 13px;
+}
+.description .description-Container .text .descrip{
+    font-size: 14px;
+}
+.description .description-Container .text .getinTouchlink{
+    font-size: 15px;
+}
+
+.offers{
+    top: 200vh;
+    height: fit-content;
+   }
+
+.offers-Container .head{
+    margin-top: 50px;
+}
+.offers .offers-Container .head .empower{
+    font-size: 13px;
+}
+
+.offers .offers-Container .head .personalized{
+    font-size: 23px;
+}
+
+.offers .offers-Container .choices{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+   .offers .offers-Container .choices .choiceOne .choiceOneImg,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoImg,
+   .offers .offers-Container .choices .choiceThree .choiceThreeImg{
+    width: 270px;
+    height: 180px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt{
+    width: 270px;
+    height: 150px;
+   }
+   
+ 
+
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .Dynamic p,
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .yogaClass p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .high p{
+    font-size: 18px;
+   }
+
+   .offers .offers-Container .choices .choiceOne .choiceOneTxt .tailored p,
+   .offers .offers-Container .choices .choiceTwo .choiceTwoTxt .empower p,
+   .offers .offers-Container .choices .choiceThree .choiceThreeTxt .get p{
+    font-size: 12px;
+   }
+
+  .getIntouch{
+    top: 365vh;
+    height: fit-content;
+   }
+
+   .getIntouch .getIntouch-Container{
+    flex-direction: column-reverse;
+    padding: 0px;
+
+}
+
+.getIntouch .getIntouch-Container .form .getIntouchHead p.getHead{
+    font-size: 20px
     
-      .headNav.show {
-        display: flex;
-        width: 100%;
-        height:  200px;
-      }
-    
-      .navBar .hamburger {
-        display: block;
-        color: #020402;
-        z-index: 99;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        font-size: 26px;
-        
-      }
+}
 
-    nav {
-        height: 8vh;
+.getIntouch .getIntouch-Container .form .getIntouchHead p.reachHead{
+    font-size: 14px;
+    width: 45vh;
+}
 
-    }
+.getIntouch .getIntouch-Container .form{
+    margin-left: 10px;
+    margin-top: 30px;
+}
 
-    .navBar .brandName .brand a{
-        font-size: 20px;
-    }
-    
-    .headNav li .btn {
-        height: 30px;
-        font-size: .7rem;
-    }
+.getIntouch .getIntouch-Container .form .form-floating .form-control{
+    width: 50vh;
+    margin-top: 30px;
+}
 
-    .headNav {
-        width: 40%;
-    }
+.getIntouch .getIntouch-Container .form .form-floating label{
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .iAllow{
+    width: 45vh;
+    font-size: 12px;
+}
+
+.getIntouch .getIntouch-Container .form .submitBtn .btn{
+    margin-top: 20px;
+    width: 45vh;
+    height: 6vh;
+}
+
+.getIntouch .getIntouch-Container .map .contact-section {
+    width : 40vh;
+}
+  
+.getIntouch .getIntouch-Container .map h2 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.getIntouch .getIntouch-Container .map  .info-group {
+    font-size: small
+}
+
+.getIntouch .getIntouch-Container .map .info-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.getIntouch .getIntouch-Container .map .hours {
+    margin-top: 10px;
+}
+ 
+   .newsLetter{
+    top: 4035px;
+   }
+
+   
+.newsLetter .newsLetterForm .form{
+    flex-direction: column;
+}
+
+.newsLetter .newsLetterForm .form .form-floating{
+    width: 40vh;
+    margin: 5px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating input{
+    font-size: 11px;
+}
+
+.newsLetter .newsLetterForm .form .form-floating label{
+    font-size: 11px;
+}
+.newsLetter .newsLetterForm .form .submitBtn{
+    margin-top: 20px;
+}
+.newsLetter .newsLetterForm .form .submitBtn .btn{
+    width: 40vh;
+    height: 6vh;
+    background-color: #32aa27;
+    border-radius: 30px;
+}
+
+.newsLetter .newsLetterForm .newsLetterHead span{
+    font-size: 14px;
+}
+
+   footer{
+    top: 4400px;
+   }
+
+   footer .foot{
+   justify-content:space-around;
+   flex-direction: column;
+}
+
+footer .foot .footHead{
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+   align-items: center;
+}
+
+footer .foot .footHead .FootbrandName .brand{
+   font-size: 26px;
+   font-weight: 800;
+   inline-size: 1.5;
+   letter-spacing: 0px;
+}
+
+footer .foot .footHead .nav .FootNav{
+   display:flex;
+   flex-direction: row;
+   list-style: none;
+}
+
+footer .foot .footHead .nav .FootNav li a {
+   margin-right: 30px;
+   font-size: 14px;
+   color:#acacac;
+}
+footer .foot .footHead .nav .FootNav li:hover{
+   text-decoration: underline;
+   text-underline-offset: 10px;
+   transition: text-underline-offset 0.2s ease;
+}
+footer .under{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+footer .under .owner span,
+footer .foot .contact .socMed i,
+footer .foot .contact .mail a{
+   color:#acacac;
+   text-decoration: none;
+}
+
+footer .under .owner span{
+   font-size: 14px;
+}
+
+footer .foot .contact p{
+   font-size: 14px;
+}
+
+footer .foot .contact .socMed{
+   font-size: 18px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: start;
+   width: 150px;
+}
 }
