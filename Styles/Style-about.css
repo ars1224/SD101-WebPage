@@ -158,6 +158,13 @@ nav {
 }
 
 /* About Us*/
+
+.main-Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+
+}
 .about-us{
     top: 250px;
     position: absolute;
@@ -222,8 +229,6 @@ color: #32aa27;
 .meetTheteam{
     background-color: #ffffff;
     height: 80vh;
-    position: absolute;
-    top: 200vh;
     width: 100%;
     z-index: 2;
 }
@@ -283,8 +288,6 @@ border-top-left-radius: 10px;
 .getIntouch{
     background-color: #ffffff;
     height: 90vh;
-    position: absolute;
-    top: 280vh;
     width: 100%;
     z-index: 2;
     padding: 20px;
@@ -409,8 +412,6 @@ border-top-left-radius: 10px;
 .newsLetter{
     background-color: #eef1ef;
     height: 30vh;
-    position: absolute;
-    top: 550vh;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -483,8 +484,6 @@ border-top-left-radius: 10px;
 .newsLetter{
     background-color: #eef1ef;
     height: 30vh;
-    position:absolute;
-    top: 370vh;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -560,8 +559,6 @@ border-top-left-radius: 10px;
 footer{
     background-color:#292c29;
     height: 50%;
-    position: absolute;
-    top: 400vh;
     width: 100%;
     z-index: 1;
 }
