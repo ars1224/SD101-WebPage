@@ -25,6 +25,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 2;
+    gap: 0px;
 }
 
 .navBar {
@@ -117,7 +118,13 @@ nav {
 }
 
 /* content */
-
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    z-index: 1;
+    width: auto;
+}
 .offer{
     background-color: #ffffff;
     height: fit-content;
