@@ -116,9 +116,8 @@ nav {
 
 .mainContainer{
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
 }
 
 /* Cover Page */
@@ -222,8 +221,6 @@ nav {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
     background-color: #ffffff;
     height:100%;
-    position: absolute;
-    top: 90vh;
     width: 100%;
     z-index: 1;
 }
@@ -310,14 +307,13 @@ nav {
 .offers{
     background-color: #eef1ef;
     height:100%;
-    position: absolute;
-    top: 150vh;
     width: 100%;
     z-index: 1;
     display: flex;
     flex-direction:row;
     align-items:flex-start;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
  .offers-Container .head{
@@ -548,8 +544,6 @@ nav {
 .getIntouch{
     background-color: #ffffff;
     height:100%;
-    position: absolute;
-    top: 250vh;
     width: 100%;
     z-index: 1;
     padding: 20px;
@@ -557,6 +551,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 20px;
 }
 
 .getIntouch .getIntouch-Container{
@@ -680,14 +675,13 @@ nav {
 .newsLetter{
     background-color: #eef1ef;
     height:100%;
-    position: absolute;
-    top: 320vh;
     width: 100%;
     z-index: 1;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
+    padding-bottom: 30px;
 }
 
 .newsLetter .newsLetterForm .form{
@@ -755,8 +749,6 @@ nav {
 footer{
     background-color:#292c29;
     height: 100%;
-    position: absolute;
-    top: 343vh;
     width: 100%;
     z-index: 1;
     display: flex;
