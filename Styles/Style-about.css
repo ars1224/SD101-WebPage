@@ -677,6 +677,11 @@ footer .foot .contact .socMed{
           .aboutUs{
             top: 130px;
         }
+
+        .getIntouch{
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
     
     }
     @media (min-width: 768px) and (max-width: 992px){
@@ -714,6 +719,10 @@ footer .foot .contact .socMed{
           .aboutUs{
             top: 130px;
         }
+        .getIntouch{
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
     }
     @media (min-width: 481px) and (max-width: 768px){
         .headNav {
@@ -746,6 +755,10 @@ footer .foot .contact .socMed{
             align-items: end;
             
           }
+          .getIntouch{
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
     }
     @media (min-width: 320px) and (max-width: 481px){
         .headNav {
@@ -778,4 +791,8 @@ footer .foot .contact .socMed{
             align-items: end;
             
           }
+          .getIntouch{
+            flex-direction: column-reverse;
+            height: fit-content;
+        }
     }
