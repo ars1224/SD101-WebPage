@@ -234,7 +234,7 @@ color: #32aa27;
 
 .meetTheteam{
     background-color: #ffffff;
-    height: 80vh;
+    height: fit-content;
     width: 100%;
     z-index: 2;
 }
@@ -373,7 +373,7 @@ border-top-left-radius: 10px;
 
 .getIntouch .map .contact-section {
     width : 650px;
-    height: 80vh;
+    height: fit-content;
     margin: auto;
     background: white;
     padding: 20px;
@@ -647,6 +647,25 @@ footer .foot .contact .socMed{
         flex-direction: column-reverse;
         height: fit-content;
     }
+
+    .newsLetter{
+        height: fit-content;
+    }
+
+    .newsLetter .newsLetterForm .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .meetTheteam .the-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -730,8 +749,28 @@ footer .foot .contact .socMed{
             flex-direction: column-reverse;
             height: fit-content;
         }
+
+        .newsLetter{
+            height: fit-content;
+        }
+    
+        .newsLetter .newsLetterForm .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+        .meetTheteam .the-team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
     @media (min-width: 481px) and (max-width: 768px){
+
         .headNav {
             display: none;
             flex-direction: row;
@@ -765,6 +804,25 @@ footer .foot .contact .socMed{
           .getIntouch{
             flex-direction: column-reverse;
             height: fit-content;
+        }
+
+        .newsLetter{
+            height: fit-content;
+        }
+    
+        .newsLetter .newsLetterForm .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+        .meetTheteam .the-team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
     @media (min-width: 320px) and (max-width: 481px){
@@ -801,5 +859,23 @@ footer .foot .contact .socMed{
           .getIntouch{
             flex-direction: column-reverse;
             height: fit-content;
+        }
+        .newsLetter{
+            height: fit-content;
+        }
+    
+        .newsLetter .newsLetterForm .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+        .meetTheteam .the-team{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
