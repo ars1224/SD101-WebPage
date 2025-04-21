@@ -642,6 +642,13 @@ footer .foot .contact .socMed{
     width: 150px;
 }
 
+@media (min-width: 1200px) and (max-width: 1600px){
+    .getIntouch{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1200px){
         .headNav {
             display: none;
