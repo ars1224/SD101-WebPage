@@ -133,15 +133,22 @@ nav {
     z-index: -1;
 }
 
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    z-index: 1;
+    top: 10vh;
+    position: absolute;
+    width: 100%;
+}
+
 /* Booking */
 .booking {
     height: 79%;
-    width: 99%;
+    width:100%;
     margin: 10px;
-    top: 110px;
-    position: absolute;
     z-index: 2;
-
 }
 
 .booking .booking-Container .progress {
@@ -191,11 +198,57 @@ nav {
     font-weight: bold;
 }
 
-.info-text {
+#discountMsg{
     color: #32aa27;
     margin-top: 10px;
     font-weight: 500;
+    text-align: center;
 }
+
+.booking .form-section  .login {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.booking .form-section  .login h4{
+    font-weight: 700;
+    color:#706f6f;
+}
+
+.booking .form-section  .login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.booking .form-section  .login span{
+    margin-top: 20px;
+}
+
+.booking .form-section .login .mb-3 input{
+    width: 50vh;
+}
+
+.booking .form-section .login .mb-3 label{
+   font-size:0.875rem;
+}
+
+.booking .form-section .login button{
+    width:20vh ;
+    background-color: #32aa27;
+    border-color: #32aa27;
+}
+
+.booking .form-section .login button:hover{
+    background-color: #3bc82e;
+    border-color:  #3bc82e;
+}
+
 .hidden {
     display: none;
 }
@@ -226,6 +279,10 @@ input[type="radio"].d-none + span {
   .input-error {
     border: 2px solid red !important;
     outline: none;
+  }
+
+  .booking .booking-Container .form-section .class{
+    display: none;
   }
   
 /* radio btn choices */
@@ -366,12 +423,29 @@ input[type="radio"].btn-check:checked + label {
 .booking .booking-Container .form-section{
     margin-top:120px;
 }
-.booking .booking-Container .form-section .member{
+#memberChoiceGroup .border{
+    border-color: #000000;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.312),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.881),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+    border-width: 2px;
+    height:50vh;
+    width: 30%;
+    margin-left: 60vh;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -70px;
+}
+.booking .booking-Container .form-section .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .booking .booking-Container .class{
@@ -451,8 +525,11 @@ input[type="radio"].btn-check:checked + label {
   #step2 .form #userDetailsForm .mb-3 .form-control{
     width: 40rem;
     border-color: #595959;
-
   }
+#step2 .form #userDetailsForm .date{
+    margin-bottom: 30px;
+}
+  
 
   #step2 .form #userDetailsForm{
     display: flex;
@@ -464,7 +541,7 @@ input[type="radio"].btn-check:checked + label {
   /*btn Time */
   #step2 .form #userDetailsForm .timeSelection{
     margin-top: 15px;
-    margin-bottom: 30px;
+    width: 85%;
   }
 
   #step2 .form #userDetailsForm .timeSelection span{
@@ -512,7 +589,15 @@ input[type="radio"].btn-check:checked + label {
     0 4px 10px rgba(0, 0, 0, 0.2);
     border-width: 2px;
     width: 100vh;
+    height: 80vh;
     padding: 30px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 #priceBox {
@@ -520,9 +605,9 @@ input[type="radio"].btn-check:checked + label {
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    max-width: 200px;
-    float: right;
     margin-left: 20px;
+    width: 50vh;
+    height: 80vh;
 }
 #priceDisplay {
     font-size: 1.5rem;
@@ -545,170 +630,184 @@ input[type="radio"].btn-check:checked + label {
     visibility:hidden ;
 }
 
+@media (min-width: 1200px) and (max-width: 1600px){
+    .headNav {
+        width: 37%;
+    }
 
+    #memberChoiceGroup .border{
+        width: 50%;
+        margin-left: 35vh;
+        margin-bottom:0px;
+        padding-bottom: 0px;
+    }
 
+    #step2 .form {
+        margin-left: 15vh;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+        margin-bottom: 50px;
+      }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .headNav {
+        display: none;
+        flex-direction: row;
+        position: fixed;
+        align-items: center;
+        justify-items: center;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: 3;
+        justify-content:space-evenly;
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  100px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
 
+    #memberChoiceGroup .border{
+        width: 50%;
+        margin-left: 26vh;
+        margin-bottom:0px;
+        padding-bottom: 0px;
+    }
 
-/* Optional Footer Code — Uncomment if you need it later */
-/*
-footer {
-    background-color:#292c29;
-    height: 50%;
-    position: absolute;
-    top: 400vh;
-    width: 100%;
-    z-index: 1;
+    #step2 .form {
+        margin-left: 15vh;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+        margin-bottom: 50px;
+      }
+
+      #step2 .form #userDetailsForm .timeSelection .btn-group{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+      }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .headNav {
+        display: none;
+        flex-direction: row;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: 3;
+        justify-content:space-evenly;
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  100px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+      }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .headNav {
+        display: none;
+        flex-direction: row;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: 3;
+        justify-content:space-evenly;
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  100px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+      }
+}
+@media (min-width: 320px) and (max-width: 481px){
+    .headNav {
+        display: none;
+        flex-direction: row;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        z-index: 3;
+        justify-content:space-evenly;
+      }
+    
+      .headNav.show {
+        display: flex;
+        width: 100%;
+        height:  100px;
+      }
+    
+      .navBar .hamburger {
+        display: block;
+        color: #020402;
+        z-index: 99;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        
+      }
 }
 
-footer .foot {
-    color:#acacac;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    margin-top: 150px;
-}
 
-footer .foot .footHead {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
-footer .foot .footHead .FootbrandName .brand {
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: 0px;
-}
-
-footer .foot .footHead .nav .FootNav {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-footer .foot .footHead .nav .FootNav li a {
-    margin-right: 30px;
-    font-size: 14px;
-    color:#acacac;
-}
-
-footer .foot .footHead .nav .FootNav li:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    transition: text-underline-offset 0.2s ease;
-}
-
-footer .under {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .under .owner span,
-footer .foot .contact .socMed i,
-footer .foot .contact .mail a {
-    color:#acacac;
-    text-decoration: none;
-}
-
-footer .under .owner span {
-    font-size: 14px;
-}
-
-footer .foot .contact p {
-    font-size: 14px;
-}
-
-footer .foot .contact .socMed {
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    width: 150px;
-}
-*/
-
-/* Optional Footer Code — Uncomment if you need it later */
-/*
-footer {
-    background-color:#292c29;
-    height: 50%;
-    position: absolute;
-    top: 400vh;
-    width: 100%;
-    z-index: 1;
-}
-
-footer .foot {
-    color:#acacac;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    margin-top: 150px;
-}
-
-footer .foot .footHead {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .foot .footHead .FootbrandName .brand {
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: 0px;
-}
-
-footer .foot .footHead .nav .FootNav {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-footer .foot .footHead .nav .FootNav li a {
-    margin-right: 30px;
-    font-size: 14px;
-    color:#acacac;
-}
-
-footer .foot .footHead .nav .FootNav li:hover {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    transition: text-underline-offset 0.2s ease;
-}
-
-footer .under {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .under .owner span,
-footer .foot .contact .socMed i,
-footer .foot .contact .mail a {
-    color:#acacac;
-    text-decoration: none;
-}
-
-footer .under .owner span {
-    font-size: 14px;
-}
-
-footer .foot .contact p {
-    font-size: 14px;
-}
-
-footer .foot .contact .socMed {
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    width: 150px;
-}
-*/
